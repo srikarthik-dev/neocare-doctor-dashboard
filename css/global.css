@@ -1,0 +1,957 @@
+/*
+ * NEOCARE Doctor Dashboard — Global Design System
+ * ─────────────────────────────────────────────────
+ * Defines: CSS reset, design tokens, typography,
+ * base element styles, spacing utilities, and
+ * responsive foundation.
+ *
+ * DO NOT add page-specific styles here.
+ * Page-specific styles belong in their respective CSS files.
+ */
+
+/* ═══════════════════════════════════════════
+   1. DESIGN TOKENS (CSS Custom Properties)
+   ═══════════════════════════════════════════ */
+
+:root {
+  /* — Brand Colors — */
+  --color-primary:       #2F6FED;
+  --color-primary-dark:  #1F4FBF;
+  --color-accent:        #14B8A6;
+  --color-success:       #16A34A;
+  --color-warning:       #D97706;
+  --color-critical:      #DC2626;
+  --color-info:          #0284C7;
+
+  /* — Backgrounds — */
+  --bg-app:              #F5F7FA;
+  --bg-surface:          #FFFFFF;
+  --bg-sidebar:          #101828;
+
+  /* — Text — */
+  --text-primary:        #111827;
+  --text-secondary:      #6B7280;
+  --text-inverse:        #F9FAFB;
+
+  /* — Borders — */
+  --border-subtle:       #E5E7EB;
+
+  /* — Border Radii — */
+  --radius-card:         14px;
+  --radius-pill:         999px;
+  --radius-sm:           6px;
+  --radius-md:           10px;
+
+  /* — Shadows — */
+  --shadow-card:         0 1px 3px rgba(16, 24, 40, 0.08);
+  --shadow-elevated:     0 4px 16px rgba(16, 24, 40, 0.12);
+
+  /* — Spacing Scale — */
+  --space-1:             4px;
+  --space-2:             8px;
+  --space-3:             12px;
+  --space-4:             16px;
+  --space-5:             20px;
+  --space-6:             24px;
+  --space-8:             32px;
+  --space-10:            40px;
+  --space-12:            48px;
+  --space-16:            64px;
+
+  /* — Typography — */
+  --font-sans:           'Inter', system-ui, -apple-system, BlinkMacSystemFont,
+                         'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono:           'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+
+  --text-xs:             0.75rem;    /* 12px */
+  --text-sm:             0.875rem;   /* 14px */
+  --text-base:           1rem;       /* 16px */
+  --text-lg:             1.125rem;   /* 18px */
+  --text-xl:             1.25rem;    /* 20px */
+  --text-2xl:            1.5rem;     /* 24px */
+  --text-3xl:            1.875rem;   /* 30px */
+
+  --font-normal:         400;
+  --font-medium:         500;
+  --font-semibold:       600;
+  --font-bold:           700;
+
+  --leading-tight:       1.25;
+  --leading-normal:      1.5;
+  --leading-relaxed:     1.625;
+
+  /* — Transitions — */
+  --transition-fast:     150ms ease;
+  --transition-base:     250ms ease;
+  --transition-slow:     400ms ease;
+
+  /* — Z-Index Scale — */
+  --z-base:              0;
+  --z-dropdown:          100;
+  --z-sticky:            200;
+  --z-sidebar:           300;
+  --z-overlay:           400;
+  --z-modal:             500;
+  --z-toast:             600;
+}
+
+/* ═══════════════════════════════════════════
+   2. CSS RESET
+   ═══════════════════════════════════════════ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: var(--font-normal);
+  line-height: var(--leading-normal);
+  color: var(--text-primary);
+  background-color: var(--bg-app);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* ═══════════════════════════════════════════
+   3. TYPOGRAPHY
+   ═══════════════════════════════════════════ */
+
+/* Import Inter from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+h1 { font-size: var(--text-3xl); font-weight: var(--font-bold);    line-height: var(--leading-tight); }
+h2 { font-size: var(--text-2xl); font-weight: var(--font-semibold); line-height: var(--leading-tight); }
+h3 { font-size: var(--text-xl);  font-weight: var(--font-semibold); line-height: var(--leading-tight); }
+h4 { font-size: var(--text-lg);  font-weight: var(--font-medium);   line-height: var(--leading-tight); }
+h5 { font-size: var(--text-base); font-weight: var(--font-medium);  }
+h6 { font-size: var(--text-sm);  font-weight: var(--font-medium);   }
+
+p  { line-height: var(--leading-relaxed); }
+
+small { font-size: var(--text-xs); }
+
+/* ═══════════════════════════════════════════
+   4. LINK STYLES
+   ═══════════════════════════════════════════ */
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* ═══════════════════════════════════════════
+   5. BUTTON FOUNDATION
+   ═══════════════════════════════════════════ */
+
+/*
+ * Base button reset and foundation.
+ * Specific button variants (primary, secondary, ghost, danger)
+ * will be added in later stages.
+ */
+
+button,
+[role="button"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  line-height: 1;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    opacity var(--transition-fast);
+  user-select: none;
+}
+
+button:disabled,
+[role="button"][aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+button:focus-visible,
+[role="button"]:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* ═══════════════════════════════════════════
+   6. APPLICATION SHELL PLACEHOLDER
+   ═══════════════════════════════════════════ */
+
+/*
+ * Minimal shell style. The full application layout
+ * (sidebar, topbar, main content area) will be
+ * implemented in a later stage.
+ */
+
+#app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg-app);
+}
+
+/* ═══════════════════════════════════════════
+   7. UTILITY CLASSES (minimal set)
+   ═══════════════════════════════════════════ */
+
+/* Visually hidden — accessible off-screen text */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ═══════════════════════════════════════════
+   8. RESPONSIVE FOUNDATION
+   ═══════════════════════════════════════════ */
+
+/*
+ * Breakpoints (mobile-first):
+ *   xs:   < 480px   (small phones)
+ *   sm:   ≥ 480px   (large phones)
+ *   md:   ≥ 768px   (tablets)
+ *   lg:   ≥ 1024px  (laptops)
+ *   xl:   ≥ 1280px  (desktops)
+ *   2xl:  ≥ 1536px  (wide screens)
+ *
+ * Full responsive layout rules belong in css/responsive.css.
+ */
+
+/* ═══════════════════════════════════════════
+   9. LOGIN PAGE — Stage 2
+   Styles scoped to body.login-page only.
+   ═══════════════════════════════════════════ */
+
+/* ── Layout ──────────────────────────────── */
+
+body.login-page {
+  background-color: var(--bg-app);
+  overflow-x: hidden;
+}
+
+.login-root {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ── Left branding panel ─────────────────── */
+
+.login-brand {
+  display: none; /* hidden on mobile, shown md+ */
+  flex: 0 0 420px;
+  background-color: var(--bg-sidebar);
+  color: var(--text-inverse);
+  padding: var(--space-12) var(--space-10);
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-brand::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 300px;
+  height: 300px;
+  background: rgba(47, 111, 237, 0.12);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.login-brand-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-10);
+  position: relative;
+  z-index: 1;
+}
+
+.login-brand-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.brand-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-md);
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.brand-icon--sm {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+}
+
+.brand-wordmark {
+  font-size: var(--text-xl);
+  font-weight: var(--font-bold);
+  letter-spacing: 0.06em;
+  color: var(--text-inverse);
+}
+
+.brand-wordmark--sm {
+  font-size: var(--text-lg);
+  color: var(--text-primary);
+}
+
+.brand-headline {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-tight);
+  color: var(--text-inverse);
+  margin-bottom: var(--space-3);
+}
+
+.brand-sub {
+  font-size: var(--text-sm);
+  color: rgba(249, 250, 251, 0.65);
+  line-height: var(--leading-relaxed);
+}
+
+.brand-features {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.brand-features li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+  color: rgba(249, 250, 251, 0.8);
+}
+
+.feature-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.brand-disclaimer {
+  font-size: var(--text-xs);
+  color: rgba(249, 250, 251, 0.4);
+  line-height: var(--leading-relaxed);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: var(--space-4);
+}
+
+/* ── Right login panel ───────────────────── */
+
+.login-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8) var(--space-4);
+  background-color: var(--bg-surface);
+}
+
+.login-form-container {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+/* ── Mobile branding ─────────────────────── */
+
+.login-mobile-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+/* ── Form header ─────────────────────────── */
+
+.login-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.login-title {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  color: var(--text-primary);
+}
+
+.login-subtitle {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+/* ── Form ────────────────────────────────── */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+/* ── Form groups ─────────────────────────── */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.form-group--row {
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-1);
+}
+
+.form-label {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--text-primary);
+}
+
+/* ── Inputs ──────────────────────────────── */
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  display: flex;
+  color: var(--text-secondary);
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px var(--space-4) 10px 40px;
+  font-size: var(--text-sm);
+  color: var(--text-primary);
+  background-color: var(--bg-surface);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  outline: none;
+  transition:
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.form-input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.form-input:hover {
+  border-color: #c0c9d4;
+}
+
+.form-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(47, 111, 237, 0.12);
+}
+
+.form-input.input-error {
+  border-color: var(--color-critical);
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+.form-input--with-action {
+  padding-right: 44px;
+}
+
+/* ── Password toggle button ──────────────── */
+
+.input-action-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  color: var(--text-secondary);
+  padding: 0;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.input-action-btn:hover {
+  color: var(--text-primary);
+}
+
+.input-action-btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+  border-radius: var(--radius-md);
+}
+
+/* ── Field-level errors ──────────────────── */
+
+.field-error {
+  font-size: var(--text-xs);
+  color: var(--color-critical);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin-top: 2px;
+}
+
+.field-error[hidden] {
+  display: none;
+}
+
+/* ── Form-level error banner ─────────────── */
+
+.form-error-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  background-color: rgba(220, 38, 38, 0.06);
+  border: 1px solid rgba(220, 38, 38, 0.25);
+  border-radius: var(--radius-md);
+  color: var(--color-critical);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+}
+
+.form-error-banner[hidden] {
+  display: none;
+}
+
+/* ── Forgot password link (styled as button) */
+
+.forgot-link {
+  font-size: var(--text-xs);
+  font-weight: var(--font-medium);
+  color: var(--color-primary);
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+  border-radius: var(--radius-sm);
+}
+
+.forgot-link:hover {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
+.forgot-link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* ── Primary button (login page variant) ─── */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 10px var(--space-6);
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    opacity var(--transition-fast);
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border-color: var(--color-primary);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+  box-shadow: 0 2px 8px rgba(47, 111, 237, 0.3);
+}
+
+.btn-primary:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.btn-primary:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.btn-block {
+  width: 100%;
+  justify-content: center;
+}
+
+/* Loading spinner */
+.btn-spinner {
+  display: inline-flex;
+}
+
+.spin {
+  animation: spin 0.75s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Checkbox ────────────────────────────── */
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.checkbox-custom {
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid var(--border-subtle);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-surface);
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast);
+  flex-shrink: 0;
+  position: relative;
+}
+
+.checkbox-input:checked + .checkbox-custom {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.checkbox-input:checked + .checkbox-custom::after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 7px;
+  border: 2px solid #ffffff;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg) translateY(-1px);
+}
+
+.checkbox-input:focus-visible + .checkbox-custom {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* ── Demo credentials card ───────────────── */
+
+.demo-credentials {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  background-color: var(--bg-app);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+}
+
+.demo-credentials__title {
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-1);
+}
+
+.demo-credentials__row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.demo-credentials__key {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  min-width: 56px;
+}
+
+.demo-fill-btn {
+  font-size: var(--text-xs);
+  font-weight: var(--font-medium);
+  color: var(--color-primary);
+  background: transparent;
+  border: none;
+  padding: 2px 0;
+  cursor: pointer;
+  text-align: left;
+  transition: color var(--transition-fast);
+  border-radius: var(--radius-sm);
+}
+
+.demo-fill-btn:hover {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
+.demo-fill-btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.demo-credentials__note {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  opacity: 0.75;
+  margin-top: var(--space-1);
+  border-top: 1px solid var(--border-subtle);
+  padding-top: var(--space-2);
+}
+
+/* ── Forgot password modal ───────────────── */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(16, 24, 40, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: var(--z-modal);
+  padding: var(--space-4);
+  animation: fadeInOverlay var(--transition-base) ease;
+}
+
+.modal-overlay[hidden] {
+  display: none;
+}
+
+@keyframes fadeInOverlay {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.modal-card {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-elevated);
+  width: 100%;
+  max-width: 400px;
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  animation: slideUpCard var(--transition-base) ease;
+}
+
+@keyframes slideUpCard {
+  from { transform: translateY(10px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.modal-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(2, 132, 199, 0.1);
+  border-radius: var(--radius-md);
+  color: var(--color-info);
+  flex-shrink: 0;
+}
+
+.modal-title {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.modal-notice {
+  color: var(--color-warning);
+  font-size: var(--text-sm);
+}
+
+.modal-body p {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ── Responsive ──────────────────────────── */
+
+@media (min-width: 768px) {
+  .login-brand {
+    display: flex;
+  }
+
+  .login-mobile-brand {
+    display: none;
+  }
+
+  .login-panel {
+    background-color: var(--bg-app);
+  }
+
+  .login-form-container {
+    background-color: var(--bg-surface);
+    padding: var(--space-10);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+  }
+}
+
+@media (max-width: 479px) {
+  .login-panel {
+    padding: var(--space-6) var(--space-4);
+    align-items: flex-start;
+    padding-top: var(--space-10);
+  }
+}

@@ -1,0 +1,19 @@
+/*
+ * NEOCARE Doctor Dashboard — Responsive Styles
+ * ──────────────────────────────────────────────
+ * Media query overrides for all breakpoints.
+ *
+ * Breakpoints (mobile-first):
+ *   sm:  @media (min-width: 480px)
+ *   md:  @media (min-width: 768px)
+ *   lg:  @media (min-width: 1024px)
+ *   xl:  @media (min-width: 1280px)
+ *   2xl: @media (min-width: 1536px)
+ *
+ * Scope: sidebar collapse, grid reflow,
+ * typography scaling, touch-target sizing,
+ * and print media overrides.
+ *
+ * NOTE: All responsive rules will be implemented in a later stage.
+ *       This file is a placeholder for the scaffolding.
+ */
