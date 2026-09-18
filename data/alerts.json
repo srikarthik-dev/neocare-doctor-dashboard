@@ -1,1 +1,205 @@
-[]
+[
+  {
+    "_comment": "SYNTHETIC DEMO DATA — All alerts are algorithmically generated. Not derived from real patients. Not for clinical use."
+  },
+  {
+    "alertId": "A0001",
+    "patientId": "P0004",
+    "timestamp": "2026-09-18T09:12:00+05:30",
+    "sensor": "maternalHeartRate",
+    "reading": 105,
+    "severity": "Warning",
+    "message": "Maternal heart-rate reading requires review.",
+    "status": "New"
+  },
+  {
+    "alertId": "A0002",
+    "patientId": "P0004",
+    "timestamp": "2026-09-18T10:48:00+05:30",
+    "sensor": "systolicBP",
+    "reading": 151,
+    "severity": "Critical",
+    "message": "Elevated systolic blood pressure detected.",
+    "status": "New"
+  },
+  {
+    "alertId": "A0003",
+    "patientId": "P0008",
+    "timestamp": "2026-09-18T11:05:00+05:30",
+    "sensor": "systolicBP",
+    "reading": 146,
+    "severity": "Critical",
+    "message": "Elevated systolic blood pressure detected.",
+    "status": "New"
+  },
+  {
+    "alertId": "A0004",
+    "patientId": "P0008",
+    "timestamp": "2026-09-18T08:30:00+05:30",
+    "sensor": "spo2",
+    "reading": 95,
+    "severity": "Warning",
+    "message": "SpO2 reading below recommended range.",
+    "status": "Acknowledged"
+  },
+  {
+    "alertId": "A0005",
+    "patientId": "P0002",
+    "timestamp": "2026-09-18T07:55:00+05:30",
+    "sensor": "systolicBP",
+    "reading": 136,
+    "severity": "Warning",
+    "message": "Systolic blood pressure slightly elevated.",
+    "status": "Acknowledged"
+  },
+  {
+    "alertId": "A0006",
+    "patientId": "P0006",
+    "timestamp": "2026-09-18T09:42:00+05:30",
+    "sensor": "maternalHeartRate",
+    "reading": 92,
+    "severity": "Info",
+    "message": "Maternal heart rate at upper normal range.",
+    "status": "Acknowledged"
+  },
+  {
+    "alertId": "A0007",
+    "patientId": "P0011",
+    "timestamp": "2026-09-18T10:20:00+05:30",
+    "sensor": "diastolicBP",
+    "reading": 89,
+    "severity": "Warning",
+    "message": "Diastolic blood pressure requires monitoring.",
+    "status": "New"
+  },
+  {
+    "alertId": "A0008",
+    "patientId": "P0004",
+    "timestamp": "2026-09-18T06:15:00+05:30",
+    "sensor": "fetalHeartRate",
+    "reading": 168,
+    "severity": "Warning",
+    "message": "Fetal heart rate at upper boundary of expected range.",
+    "status": "Acknowledged"
+  },
+  {
+    "alertId": "A0009",
+    "patientId": "P0008",
+    "timestamp": "2026-09-17T22:30:00+05:30",
+    "sensor": "temperature",
+    "reading": 37.6,
+    "severity": "Info",
+    "message": "Temperature slightly elevated — monitor for trend.",
+    "status": "Acknowledged"
+  },
+  {
+    "alertId": "A0010",
+    "patientId": "P0001",
+    "timestamp": "2026-09-17T18:00:00+05:30",
+    "sensor": "spo2",
+    "reading": 96,
+    "severity": "Info",
+    "message": "SpO2 reading at lower end of normal range.",
+    "status": "Acknowledged"
+  },
+  {
+    "alertId": "A0011",
+    "patientId": "P0002",
+    "timestamp": "2026-09-18T09:58:00+05:30",
+    "sensor": "fetalHeartRate",
+    "reading": 160,
+    "severity": "Info",
+    "message": "Fetal heart rate elevated — observation recommended.",
+    "status": "New"
+  },
+  {
+    "alertId": "A0012",
+    "patientId": "P0011",
+    "timestamp": "2026-09-17T15:30:00+05:30",
+    "sensor": "systolicBP",
+    "reading": 137,
+    "severity": "Warning",
+    "message": "Systolic blood pressure elevated above baseline.",
+    "status": "Acknowledged"
+  },
+  {
+    "alertId": "A0013",
+    "patientId": "P0006",
+    "timestamp": "2026-09-18T08:10:00+05:30",
+    "sensor": "systolicBP",
+    "reading": 131,
+    "severity": "Info",
+    "message": "Blood pressure trending upward — review recommended.",
+    "status": "New"
+  },
+  {
+    "alertId": "A0014",
+    "patientId": "P0008",
+    "timestamp": "2026-09-18T11:20:00+05:30",
+    "sensor": "maternalHeartRate",
+    "reading": 100,
+    "severity": "Warning",
+    "message": "Maternal heart rate elevated.",
+    "status": "New"
+  },
+  {
+    "alertId": "A0015",
+    "patientId": "P0004",
+    "timestamp": "2026-09-18T11:00:00+05:30",
+    "sensor": "diastolicBP",
+    "reading": 97,
+    "severity": "Critical",
+    "message": "Diastolic blood pressure critically elevated.",
+    "status": "New"
+  },
+  {
+    "alertId": "A0016",
+    "patientId": "P0003",
+    "timestamp": "2026-09-17T13:00:00+05:30",
+    "sensor": "fetalHeartRate",
+    "reading": 133,
+    "severity": "Info",
+    "message": "Fetal heart rate at lower end of expected range.",
+    "status": "Acknowledged"
+  },
+  {
+    "alertId": "A0017",
+    "patientId": "P0009",
+    "timestamp": "2026-09-18T07:45:00+05:30",
+    "sensor": "temperature",
+    "reading": 36.2,
+    "severity": "Info",
+    "message": "Temperature reading noted — within normal range.",
+    "status": "Acknowledged"
+  },
+  {
+    "alertId": "A0018",
+    "patientId": "P0005",
+    "timestamp": "2026-09-17T14:00:00+05:30",
+    "sensor": "maternalHeartRate",
+    "reading": 86,
+    "severity": "Info",
+    "message": "Heart rate slightly elevated during activity period.",
+    "status": "Acknowledged"
+  },
+  {
+    "alertId": "A0019",
+    "patientId": "P0011",
+    "timestamp": "2026-09-18T10:55:00+05:30",
+    "sensor": "spo2",
+    "reading": 96,
+    "severity": "Info",
+    "message": "SpO2 within normal limits — observation noted.",
+    "status": "New"
+  },
+  {
+    "alertId": "A0020",
+    "patientId": "P0002",
+    "timestamp": "2026-09-18T10:30:00+05:30",
+    "sensor": "diastolicBP",
+    "reading": 87,
+    "severity": "Warning",
+    "message": "Diastolic blood pressure elevated — monitor closely.",
+    "status": "New"
+  }
+]

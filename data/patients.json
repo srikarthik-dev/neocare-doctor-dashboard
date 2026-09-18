@@ -1,1 +1,267 @@
-[]
+[
+  {
+    "_comment": "SYNTHETIC DEMO DATA — All patient records are entirely fictional. No real patient information. Not for clinical use.",
+    "patientId": "P0001",
+    "name": "Ananya Krishnan",
+    "age": 27,
+    "pregnancyWeek": 28,
+    "expectedDeliveryDate": "2026-12-10",
+    "contact": {
+      "phone": "+91-90000-00001",
+      "email": "patient0001@example.demo"
+    },
+    "monitoringStatus": "Active",
+    "riskStatus": "Low",
+    "lastUpdated": "2026-09-18T09:30:00+05:30",
+    "vitals": {
+      "maternalHeartRate": 78,
+      "systolicBP": 118,
+      "diastolicBP": 76,
+      "spo2": 98,
+      "temperature": 36.7,
+      "fetalHeartRate": 142
+    }
+  },
+  {
+    "patientId": "P0002",
+    "name": "Meera Nair",
+    "age": 31,
+    "pregnancyWeek": 34,
+    "expectedDeliveryDate": "2026-10-22",
+    "contact": {
+      "phone": "+91-90000-00002",
+      "email": "patient0002@example.demo"
+    },
+    "monitoringStatus": "Active",
+    "riskStatus": "Moderate",
+    "lastUpdated": "2026-09-18T10:05:00+05:30",
+    "vitals": {
+      "maternalHeartRate": 88,
+      "systolicBP": 132,
+      "diastolicBP": 84,
+      "spo2": 97,
+      "temperature": 37.1,
+      "fetalHeartRate": 155
+    }
+  },
+  {
+    "patientId": "P0003",
+    "name": "Lakshmi Venkataraman",
+    "age": 29,
+    "pregnancyWeek": 22,
+    "expectedDeliveryDate": "2027-02-14",
+    "contact": {
+      "phone": "+91-90000-00003",
+      "email": "patient0003@example.demo"
+    },
+    "monitoringStatus": "Active",
+    "riskStatus": "Low",
+    "lastUpdated": "2026-09-18T08:45:00+05:30",
+    "vitals": {
+      "maternalHeartRate": 74,
+      "systolicBP": 115,
+      "diastolicBP": 72,
+      "spo2": 99,
+      "temperature": 36.5,
+      "fetalHeartRate": 138
+    }
+  },
+  {
+    "patientId": "P0004",
+    "name": "Divya Raghunathan",
+    "age": 35,
+    "pregnancyWeek": 36,
+    "expectedDeliveryDate": "2026-10-05",
+    "contact": {
+      "phone": "+91-90000-00004",
+      "email": "patient0004@example.demo"
+    },
+    "monitoringStatus": "Active",
+    "riskStatus": "High",
+    "lastUpdated": "2026-09-18T11:00:00+05:30",
+    "vitals": {
+      "maternalHeartRate": 102,
+      "systolicBP": 148,
+      "diastolicBP": 94,
+      "spo2": 96,
+      "temperature": 37.4,
+      "fetalHeartRate": 162
+    }
+  },
+  {
+    "patientId": "P0005",
+    "name": "Priya Subramaniam",
+    "age": 26,
+    "pregnancyWeek": 16,
+    "expectedDeliveryDate": "2027-03-20",
+    "contact": {
+      "phone": "+91-90000-00005",
+      "email": "patient0005@example.demo"
+    },
+    "monitoringStatus": "Monitoring",
+    "riskStatus": "Low",
+    "lastUpdated": "2026-09-17T14:30:00+05:30",
+    "vitals": {
+      "maternalHeartRate": 80,
+      "systolicBP": 112,
+      "diastolicBP": 70,
+      "spo2": 99,
+      "temperature": 36.6,
+      "fetalHeartRate": 144
+    }
+  },
+  {
+    "patientId": "P0006",
+    "name": "Kavitha Balakrishnan",
+    "age": 33,
+    "pregnancyWeek": 32,
+    "expectedDeliveryDate": "2026-11-08",
+    "contact": {
+      "phone": "+91-90000-00006",
+      "email": "patient0006@example.demo"
+    },
+    "monitoringStatus": "Active",
+    "riskStatus": "Moderate",
+    "lastUpdated": "2026-09-18T09:50:00+05:30",
+    "vitals": {
+      "maternalHeartRate": 85,
+      "systolicBP": 128,
+      "diastolicBP": 82,
+      "spo2": 97,
+      "temperature": 36.9,
+      "fetalHeartRate": 148
+    }
+  },
+  {
+    "patientId": "P0007",
+    "name": "Saranya Pillai",
+    "age": 28,
+    "pregnancyWeek": 20,
+    "expectedDeliveryDate": "2027-02-28",
+    "contact": {
+      "phone": "+91-90000-00007",
+      "email": "patient0007@example.demo"
+    },
+    "monitoringStatus": "Monitoring",
+    "riskStatus": "Low",
+    "lastUpdated": "2026-09-16T11:20:00+05:30",
+    "vitals": {
+      "maternalHeartRate": 76,
+      "systolicBP": 116,
+      "diastolicBP": 74,
+      "spo2": 98,
+      "temperature": 36.6,
+      "fetalHeartRate": 140
+    }
+  },
+  {
+    "patientId": "P0008",
+    "name": "Bhavani Chandrasekaran",
+    "age": 38,
+    "pregnancyWeek": 38,
+    "expectedDeliveryDate": "2026-09-28",
+    "contact": {
+      "phone": "+91-90000-00008",
+      "email": "patient0008@example.demo"
+    },
+    "monitoringStatus": "Active",
+    "riskStatus": "High",
+    "lastUpdated": "2026-09-18T11:30:00+05:30",
+    "vitals": {
+      "maternalHeartRate": 96,
+      "systolicBP": 142,
+      "diastolicBP": 90,
+      "spo2": 96,
+      "temperature": 37.3,
+      "fetalHeartRate": 158
+    }
+  },
+  {
+    "patientId": "P0009",
+    "name": "Rekha Gopalakrishnan",
+    "age": 30,
+    "pregnancyWeek": 12,
+    "expectedDeliveryDate": "2027-04-10",
+    "contact": {
+      "phone": "+91-90000-00009",
+      "email": "patient0009@example.demo"
+    },
+    "monitoringStatus": "Active",
+    "riskStatus": "Low",
+    "lastUpdated": "2026-09-18T08:00:00+05:30",
+    "vitals": {
+      "maternalHeartRate": 72,
+      "systolicBP": 110,
+      "diastolicBP": 70,
+      "spo2": 99,
+      "temperature": 36.4,
+      "fetalHeartRate": 150
+    }
+  },
+  {
+    "patientId": "P0010",
+    "name": "Shobha Ramamurthy",
+    "age": 32,
+    "pregnancyWeek": 30,
+    "expectedDeliveryDate": "2026-11-25",
+    "contact": {
+      "phone": "+91-90000-00010",
+      "email": "patient0010@example.demo"
+    },
+    "monitoringStatus": "Inactive",
+    "riskStatus": "Low",
+    "lastUpdated": "2026-09-14T16:00:00+05:30",
+    "vitals": {
+      "maternalHeartRate": 75,
+      "systolicBP": 114,
+      "diastolicBP": 73,
+      "spo2": 98,
+      "temperature": 36.5,
+      "fetalHeartRate": 136
+    }
+  },
+  {
+    "patientId": "P0011",
+    "name": "Usha Narayanan",
+    "age": 36,
+    "pregnancyWeek": 26,
+    "expectedDeliveryDate": "2026-12-30",
+    "contact": {
+      "phone": "+91-90000-00011",
+      "email": "patient0011@example.demo"
+    },
+    "monitoringStatus": "Active",
+    "riskStatus": "Moderate",
+    "lastUpdated": "2026-09-18T10:40:00+05:30",
+    "vitals": {
+      "maternalHeartRate": 90,
+      "systolicBP": 134,
+      "diastolicBP": 86,
+      "spo2": 97,
+      "temperature": 37.0,
+      "fetalHeartRate": 152
+    }
+  },
+  {
+    "patientId": "P0012",
+    "name": "Gayathri Sundaram",
+    "age": 24,
+    "pregnancyWeek": 18,
+    "expectedDeliveryDate": "2027-03-05",
+    "contact": {
+      "phone": "+91-90000-00012",
+      "email": "patient0012@example.demo"
+    },
+    "monitoringStatus": "Monitoring",
+    "riskStatus": "Low",
+    "lastUpdated": "2026-09-17T09:15:00+05:30",
+    "vitals": {
+      "maternalHeartRate": 77,
+      "systolicBP": 112,
+      "diastolicBP": 71,
+      "spo2": 99,
+      "temperature": 36.5,
+      "fetalHeartRate": 143
+    }
+  }
+]

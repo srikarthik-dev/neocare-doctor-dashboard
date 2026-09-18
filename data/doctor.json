@@ -1,0 +1,18 @@
+{
+  "_comment": "SYNTHETIC DEMO DATA — This doctor profile is entirely fictional. DEMO-LICENSE-001 is not a real medical license. Not for clinical use.",
+  "doctorId": "D0001",
+  "name": "Dr. Ananya Sharma",
+  "email": "doctor@neocare.demo",
+  "role": "Doctor",
+  "specialization": "Obstetrics & Gynecology",
+  "department": "Maternal Care",
+  "hospital": "NEOCARE Demo Hospital",
+  "licenseNumber": "DEMO-LICENSE-001",
+  "phone": "+91-90000-00100",
+  "joinedDate": "2024-03-01",
+  "patientsAssigned": [
+    "P0001","P0002","P0003","P0004","P0005",
+    "P0006","P0007","P0008","P0009","P0010",
+    "P0011","P0012"
+  ]
+}

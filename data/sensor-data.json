@@ -1,1 +1,3771 @@
-{}
+{
+  "_comment": "SYNTHETIC DEMO DATA \u2014 All sensor readings are algorithmically generated and are not derived from real patients. Not for clinical use.",
+  "P0001": [
+    {
+      "timestamp": "2026-09-16T13:20:00+05:30",
+      "maternalHeartRate": 79.0,
+      "systolicBP": 117.0,
+      "diastolicBP": 76.0,
+      "spo2": 97.6,
+      "temperature": 36.8,
+      "fetalHeartRate": 148.0
+    },
+    {
+      "timestamp": "2026-09-16T14:40:00+05:30",
+      "maternalHeartRate": 81.0,
+      "systolicBP": 118.0,
+      "diastolicBP": 77.0,
+      "spo2": 97.2,
+      "temperature": 36.6,
+      "fetalHeartRate": 148.0
+    },
+    {
+      "timestamp": "2026-09-16T16:00:00+05:30",
+      "maternalHeartRate": 77.0,
+      "systolicBP": 119.0,
+      "diastolicBP": 79.0,
+      "spo2": 98.1,
+      "temperature": 36.6,
+      "fetalHeartRate": 149.0
+    },
+    {
+      "timestamp": "2026-09-16T17:20:00+05:30",
+      "maternalHeartRate": 82.0,
+      "systolicBP": 118.0,
+      "diastolicBP": 80.0,
+      "spo2": 98.3,
+      "temperature": 36.7,
+      "fetalHeartRate": 145.0
+    },
+    {
+      "timestamp": "2026-09-16T18:40:00+05:30",
+      "maternalHeartRate": 83.0,
+      "systolicBP": 121.0,
+      "diastolicBP": 76.0,
+      "spo2": 97.4,
+      "temperature": 36.8,
+      "fetalHeartRate": 149.0
+    },
+    {
+      "timestamp": "2026-09-16T20:00:00+05:30",
+      "maternalHeartRate": 83.0,
+      "systolicBP": 125.0,
+      "diastolicBP": 79.0,
+      "spo2": 98.8,
+      "temperature": 36.7,
+      "fetalHeartRate": 148.0
+    },
+    {
+      "timestamp": "2026-09-16T21:20:00+05:30",
+      "maternalHeartRate": 83.0,
+      "systolicBP": 124.0,
+      "diastolicBP": 81.0,
+      "spo2": 98.1,
+      "temperature": 36.8,
+      "fetalHeartRate": 144.0
+    },
+    {
+      "timestamp": "2026-09-16T22:40:00+05:30",
+      "maternalHeartRate": 80.0,
+      "systolicBP": 121.0,
+      "diastolicBP": 76.0,
+      "spo2": 97.6,
+      "temperature": 36.6,
+      "fetalHeartRate": 145.0
+    },
+    {
+      "timestamp": "2026-09-17T00:00:00+05:30",
+      "maternalHeartRate": 83.0,
+      "systolicBP": 122.0,
+      "diastolicBP": 78.0,
+      "spo2": 97.5,
+      "temperature": 36.6,
+      "fetalHeartRate": 150.0
+    },
+    {
+      "timestamp": "2026-09-17T01:20:00+05:30",
+      "maternalHeartRate": 83.0,
+      "systolicBP": 123.0,
+      "diastolicBP": 77.0,
+      "spo2": 98.4,
+      "temperature": 36.6,
+      "fetalHeartRate": 144.0
+    },
+    {
+      "timestamp": "2026-09-17T02:40:00+05:30",
+      "maternalHeartRate": 85.0,
+      "systolicBP": 123.0,
+      "diastolicBP": 79.0,
+      "spo2": 98.3,
+      "temperature": 36.8,
+      "fetalHeartRate": 147.0
+    },
+    {
+      "timestamp": "2026-09-17T04:00:00+05:30",
+      "maternalHeartRate": 80.0,
+      "systolicBP": 118.0,
+      "diastolicBP": 77.0,
+      "spo2": 97.6,
+      "temperature": 36.6,
+      "fetalHeartRate": 147.0
+    },
+    {
+      "timestamp": "2026-09-17T05:20:00+05:30",
+      "maternalHeartRate": 84.0,
+      "systolicBP": 119.0,
+      "diastolicBP": 78.0,
+      "spo2": 97.8,
+      "temperature": 36.8,
+      "fetalHeartRate": 142.0
+    },
+    {
+      "timestamp": "2026-09-17T06:40:00+05:30",
+      "maternalHeartRate": 80.0,
+      "systolicBP": 118.0,
+      "diastolicBP": 77.0,
+      "spo2": 97.6,
+      "temperature": 36.7,
+      "fetalHeartRate": 144.0
+    },
+    {
+      "timestamp": "2026-09-17T08:00:00+05:30",
+      "maternalHeartRate": 80.0,
+      "systolicBP": 117.0,
+      "diastolicBP": 80.0,
+      "spo2": 98.0,
+      "temperature": 36.6,
+      "fetalHeartRate": 137.0
+    },
+    {
+      "timestamp": "2026-09-17T09:20:00+05:30",
+      "maternalHeartRate": 78.0,
+      "systolicBP": 119.0,
+      "diastolicBP": 78.0,
+      "spo2": 97.9,
+      "temperature": 36.6,
+      "fetalHeartRate": 138.0
+    },
+    {
+      "timestamp": "2026-09-17T10:40:00+05:30",
+      "maternalHeartRate": 82.0,
+      "systolicBP": 117.0,
+      "diastolicBP": 78.0,
+      "spo2": 98.6,
+      "temperature": 36.6,
+      "fetalHeartRate": 140.0
+    },
+    {
+      "timestamp": "2026-09-17T12:00:00+05:30",
+      "maternalHeartRate": 80.0,
+      "systolicBP": 117.0,
+      "diastolicBP": 74.0,
+      "spo2": 98.2,
+      "temperature": 36.6,
+      "fetalHeartRate": 137.0
+    },
+    {
+      "timestamp": "2026-09-17T13:20:00+05:30",
+      "maternalHeartRate": 78.0,
+      "systolicBP": 119.0,
+      "diastolicBP": 77.0,
+      "spo2": 97.6,
+      "temperature": 36.7,
+      "fetalHeartRate": 134.0
+    },
+    {
+      "timestamp": "2026-09-17T14:40:00+05:30",
+      "maternalHeartRate": 80.0,
+      "systolicBP": 118.0,
+      "diastolicBP": 73.0,
+      "spo2": 98.2,
+      "temperature": 36.7,
+      "fetalHeartRate": 134.0
+    },
+    {
+      "timestamp": "2026-09-17T16:00:00+05:30",
+      "maternalHeartRate": 78.0,
+      "systolicBP": 115.0,
+      "diastolicBP": 75.0,
+      "spo2": 98.0,
+      "temperature": 36.6,
+      "fetalHeartRate": 135.0
+    },
+    {
+      "timestamp": "2026-09-17T17:20:00+05:30",
+      "maternalHeartRate": 73.0,
+      "systolicBP": 117.0,
+      "diastolicBP": 76.0,
+      "spo2": 98.5,
+      "temperature": 36.6,
+      "fetalHeartRate": 132.0
+    },
+    {
+      "timestamp": "2026-09-17T18:40:00+05:30",
+      "maternalHeartRate": 78.0,
+      "systolicBP": 117.0,
+      "diastolicBP": 71.0,
+      "spo2": 98.0,
+      "temperature": 36.6,
+      "fetalHeartRate": 138.0
+    },
+    {
+      "timestamp": "2026-09-17T20:00:00+05:30",
+      "maternalHeartRate": 77.0,
+      "systolicBP": 110.0,
+      "diastolicBP": 73.0,
+      "spo2": 98.1,
+      "temperature": 36.6,
+      "fetalHeartRate": 139.0
+    },
+    {
+      "timestamp": "2026-09-17T21:20:00+05:30",
+      "maternalHeartRate": 74.0,
+      "systolicBP": 111.0,
+      "diastolicBP": 73.0,
+      "spo2": 98.4,
+      "temperature": 36.6,
+      "fetalHeartRate": 135.0
+    },
+    {
+      "timestamp": "2026-09-17T22:40:00+05:30",
+      "maternalHeartRate": 77.0,
+      "systolicBP": 114.0,
+      "diastolicBP": 73.0,
+      "spo2": 98.0,
+      "temperature": 36.6,
+      "fetalHeartRate": 135.0
+    },
+    {
+      "timestamp": "2026-09-18T00:00:00+05:30",
+      "maternalHeartRate": 73.0,
+      "systolicBP": 114.0,
+      "diastolicBP": 72.0,
+      "spo2": 97.6,
+      "temperature": 36.6,
+      "fetalHeartRate": 139.0
+    },
+    {
+      "timestamp": "2026-09-18T01:20:00+05:30",
+      "maternalHeartRate": 72.0,
+      "systolicBP": 117.0,
+      "diastolicBP": 76.0,
+      "spo2": 97.3,
+      "temperature": 36.6,
+      "fetalHeartRate": 140.0
+    },
+    {
+      "timestamp": "2026-09-18T02:40:00+05:30",
+      "maternalHeartRate": 72.0,
+      "systolicBP": 111.0,
+      "diastolicBP": 76.0,
+      "spo2": 98.1,
+      "temperature": 36.7,
+      "fetalHeartRate": 142.0
+    },
+    {
+      "timestamp": "2026-09-18T04:00:00+05:30",
+      "maternalHeartRate": 76.0,
+      "systolicBP": 112.0,
+      "diastolicBP": 72.0,
+      "spo2": 97.9,
+      "temperature": 36.7,
+      "fetalHeartRate": 140.0
+    },
+    {
+      "timestamp": "2026-09-18T05:20:00+05:30",
+      "maternalHeartRate": 76.0,
+      "systolicBP": 117.0,
+      "diastolicBP": 77.0,
+      "spo2": 97.4,
+      "temperature": 36.7,
+      "fetalHeartRate": 140.0
+    },
+    {
+      "timestamp": "2026-09-18T06:40:00+05:30",
+      "maternalHeartRate": 77.0,
+      "systolicBP": 114.0,
+      "diastolicBP": 73.0,
+      "spo2": 97.9,
+      "temperature": 36.7,
+      "fetalHeartRate": 141.0
+    },
+    {
+      "timestamp": "2026-09-18T08:00:00+05:30",
+      "maternalHeartRate": 74.0,
+      "systolicBP": 120.0,
+      "diastolicBP": 75.0,
+      "spo2": 98.6,
+      "temperature": 36.7,
+      "fetalHeartRate": 140.0
+    },
+    {
+      "timestamp": "2026-09-18T09:20:00+05:30",
+      "maternalHeartRate": 79.0,
+      "systolicBP": 121.0,
+      "diastolicBP": 79.0,
+      "spo2": 98.7,
+      "temperature": 36.8,
+      "fetalHeartRate": 142.0
+    },
+    {
+      "timestamp": "2026-09-18T10:40:00+05:30",
+      "maternalHeartRate": 77.0,
+      "systolicBP": 116.0,
+      "diastolicBP": 76.0,
+      "spo2": 97.3,
+      "temperature": 36.7,
+      "fetalHeartRate": 150.0
+    },
+    {
+      "timestamp": "2026-09-18T12:00:00+05:30",
+      "maternalHeartRate": 76.0,
+      "systolicBP": 122.0,
+      "diastolicBP": 77.0,
+      "spo2": 97.9,
+      "temperature": 36.8,
+      "fetalHeartRate": 150.0
+    }
+  ],
+  "P0002": [
+    {
+      "timestamp": "2026-09-16T13:12:00+05:30",
+      "maternalHeartRate": 88.0,
+      "systolicBP": 136.0,
+      "diastolicBP": 83.0,
+      "spo2": 96.7,
+      "temperature": 37.2,
+      "fetalHeartRate": 161.0
+    },
+    {
+      "timestamp": "2026-09-16T14:24:00+05:30",
+      "maternalHeartRate": 89.0,
+      "systolicBP": 137.0,
+      "diastolicBP": 83.0,
+      "spo2": 97.1,
+      "temperature": 37.1,
+      "fetalHeartRate": 163.0
+    },
+    {
+      "timestamp": "2026-09-16T15:36:00+05:30",
+      "maternalHeartRate": 87.0,
+      "systolicBP": 139.0,
+      "diastolicBP": 84.0,
+      "spo2": 96.5,
+      "temperature": 37.1,
+      "fetalHeartRate": 162.0
+    },
+    {
+      "timestamp": "2026-09-16T16:48:00+05:30",
+      "maternalHeartRate": 88.0,
+      "systolicBP": 133.0,
+      "diastolicBP": 89.0,
+      "spo2": 96.6,
+      "temperature": 37.1,
+      "fetalHeartRate": 162.0
+    },
+    {
+      "timestamp": "2026-09-16T18:00:00+05:30",
+      "maternalHeartRate": 90.0,
+      "systolicBP": 137.0,
+      "diastolicBP": 87.0,
+      "spo2": 97.7,
+      "temperature": 37.0,
+      "fetalHeartRate": 163.0
+    },
+    {
+      "timestamp": "2026-09-16T19:12:00+05:30",
+      "maternalHeartRate": 89.0,
+      "systolicBP": 136.0,
+      "diastolicBP": 88.0,
+      "spo2": 96.7,
+      "temperature": 37.0,
+      "fetalHeartRate": 163.0
+    },
+    {
+      "timestamp": "2026-09-16T20:24:00+05:30",
+      "maternalHeartRate": 89.0,
+      "systolicBP": 137.0,
+      "diastolicBP": 90.0,
+      "spo2": 97.8,
+      "temperature": 37.0,
+      "fetalHeartRate": 158.0
+    },
+    {
+      "timestamp": "2026-09-16T21:36:00+05:30",
+      "maternalHeartRate": 90.0,
+      "systolicBP": 140.0,
+      "diastolicBP": 89.0,
+      "spo2": 97.6,
+      "temperature": 37.1,
+      "fetalHeartRate": 157.0
+    },
+    {
+      "timestamp": "2026-09-16T22:48:00+05:30",
+      "maternalHeartRate": 94.0,
+      "systolicBP": 139.0,
+      "diastolicBP": 88.0,
+      "spo2": 97.8,
+      "temperature": 37.1,
+      "fetalHeartRate": 156.0
+    },
+    {
+      "timestamp": "2026-09-17T00:00:00+05:30",
+      "maternalHeartRate": 94.0,
+      "systolicBP": 135.0,
+      "diastolicBP": 88.0,
+      "spo2": 97.7,
+      "temperature": 37.0,
+      "fetalHeartRate": 156.0
+    },
+    {
+      "timestamp": "2026-09-17T01:12:00+05:30",
+      "maternalHeartRate": 90.0,
+      "systolicBP": 137.0,
+      "diastolicBP": 85.0,
+      "spo2": 97.2,
+      "temperature": 37.2,
+      "fetalHeartRate": 156.0
+    },
+    {
+      "timestamp": "2026-09-17T02:24:00+05:30",
+      "maternalHeartRate": 93.0,
+      "systolicBP": 134.0,
+      "diastolicBP": 86.0,
+      "spo2": 97.6,
+      "temperature": 37.2,
+      "fetalHeartRate": 154.0
+    },
+    {
+      "timestamp": "2026-09-17T03:36:00+05:30",
+      "maternalHeartRate": 91.0,
+      "systolicBP": 134.0,
+      "diastolicBP": 83.0,
+      "spo2": 97.4,
+      "temperature": 37.1,
+      "fetalHeartRate": 155.0
+    },
+    {
+      "timestamp": "2026-09-17T04:48:00+05:30",
+      "maternalHeartRate": 93.0,
+      "systolicBP": 135.0,
+      "diastolicBP": 85.0,
+      "spo2": 96.2,
+      "temperature": 37.0,
+      "fetalHeartRate": 159.0
+    },
+    {
+      "timestamp": "2026-09-17T06:00:00+05:30",
+      "maternalHeartRate": 94.0,
+      "systolicBP": 135.0,
+      "diastolicBP": 87.0,
+      "spo2": 97.1,
+      "temperature": 37.0,
+      "fetalHeartRate": 152.0
+    },
+    {
+      "timestamp": "2026-09-17T07:12:00+05:30",
+      "maternalHeartRate": 90.0,
+      "systolicBP": 137.0,
+      "diastolicBP": 87.0,
+      "spo2": 97.6,
+      "temperature": 37.2,
+      "fetalHeartRate": 151.0
+    },
+    {
+      "timestamp": "2026-09-17T08:24:00+05:30",
+      "maternalHeartRate": 89.0,
+      "systolicBP": 129.0,
+      "diastolicBP": 86.0,
+      "spo2": 97.6,
+      "temperature": 37.1,
+      "fetalHeartRate": 154.0
+    },
+    {
+      "timestamp": "2026-09-17T09:36:00+05:30",
+      "maternalHeartRate": 88.0,
+      "systolicBP": 135.0,
+      "diastolicBP": 86.0,
+      "spo2": 97.8,
+      "temperature": 37.2,
+      "fetalHeartRate": 155.0
+    },
+    {
+      "timestamp": "2026-09-17T10:48:00+05:30",
+      "maternalHeartRate": 86.0,
+      "systolicBP": 133.0,
+      "diastolicBP": 82.0,
+      "spo2": 97.7,
+      "temperature": 37.2,
+      "fetalHeartRate": 154.0
+    },
+    {
+      "timestamp": "2026-09-17T12:00:00+05:30",
+      "maternalHeartRate": 90.0,
+      "systolicBP": 128.0,
+      "diastolicBP": 85.0,
+      "spo2": 96.4,
+      "temperature": 37.2,
+      "fetalHeartRate": 153.0
+    },
+    {
+      "timestamp": "2026-09-17T13:12:00+05:30",
+      "maternalHeartRate": 86.0,
+      "systolicBP": 132.0,
+      "diastolicBP": 82.0,
+      "spo2": 96.7,
+      "temperature": 37.2,
+      "fetalHeartRate": 148.0
+    },
+    {
+      "timestamp": "2026-09-17T14:24:00+05:30",
+      "maternalHeartRate": 85.0,
+      "systolicBP": 126.0,
+      "diastolicBP": 81.0,
+      "spo2": 97.6,
+      "temperature": 37.2,
+      "fetalHeartRate": 148.0
+    },
+    {
+      "timestamp": "2026-09-17T15:36:00+05:30",
+      "maternalHeartRate": 88.0,
+      "systolicBP": 128.0,
+      "diastolicBP": 85.0,
+      "spo2": 97.1,
+      "temperature": 37.2,
+      "fetalHeartRate": 146.0
+    },
+    {
+      "timestamp": "2026-09-17T16:48:00+05:30",
+      "maternalHeartRate": 89.0,
+      "systolicBP": 125.0,
+      "diastolicBP": 84.0,
+      "spo2": 96.6,
+      "temperature": 37.0,
+      "fetalHeartRate": 149.0
+    },
+    {
+      "timestamp": "2026-09-17T18:00:00+05:30",
+      "maternalHeartRate": 87.0,
+      "systolicBP": 126.0,
+      "diastolicBP": 82.0,
+      "spo2": 97.0,
+      "temperature": 37.1,
+      "fetalHeartRate": 150.0
+    },
+    {
+      "timestamp": "2026-09-17T19:12:00+05:30",
+      "maternalHeartRate": 84.0,
+      "systolicBP": 129.0,
+      "diastolicBP": 78.0,
+      "spo2": 97.7,
+      "temperature": 37.1,
+      "fetalHeartRate": 151.0
+    },
+    {
+      "timestamp": "2026-09-17T20:24:00+05:30",
+      "maternalHeartRate": 86.0,
+      "systolicBP": 128.0,
+      "diastolicBP": 80.0,
+      "spo2": 96.3,
+      "temperature": 37.1,
+      "fetalHeartRate": 148.0
+    },
+    {
+      "timestamp": "2026-09-17T21:36:00+05:30",
+      "maternalHeartRate": 83.0,
+      "systolicBP": 130.0,
+      "diastolicBP": 82.0,
+      "spo2": 96.7,
+      "temperature": 37.0,
+      "fetalHeartRate": 149.0
+    },
+    {
+      "timestamp": "2026-09-17T22:48:00+05:30",
+      "maternalHeartRate": 84.0,
+      "systolicBP": 125.0,
+      "diastolicBP": 79.0,
+      "spo2": 96.9,
+      "temperature": 37.2,
+      "fetalHeartRate": 152.0
+    },
+    {
+      "timestamp": "2026-09-18T00:00:00+05:30",
+      "maternalHeartRate": 86.0,
+      "systolicBP": 128.0,
+      "diastolicBP": 80.0,
+      "spo2": 97.1,
+      "temperature": 37.0,
+      "fetalHeartRate": 149.0
+    },
+    {
+      "timestamp": "2026-09-18T01:12:00+05:30",
+      "maternalHeartRate": 84.0,
+      "systolicBP": 128.0,
+      "diastolicBP": 82.0,
+      "spo2": 96.9,
+      "temperature": 37.1,
+      "fetalHeartRate": 149.0
+    },
+    {
+      "timestamp": "2026-09-18T02:24:00+05:30",
+      "maternalHeartRate": 84.0,
+      "systolicBP": 131.0,
+      "diastolicBP": 83.0,
+      "spo2": 96.5,
+      "temperature": 37.0,
+      "fetalHeartRate": 153.0
+    },
+    {
+      "timestamp": "2026-09-18T03:36:00+05:30",
+      "maternalHeartRate": 85.0,
+      "systolicBP": 127.0,
+      "diastolicBP": 84.0,
+      "spo2": 97.4,
+      "temperature": 37.2,
+      "fetalHeartRate": 151.0
+    },
+    {
+      "timestamp": "2026-09-18T04:48:00+05:30",
+      "maternalHeartRate": 83.0,
+      "systolicBP": 125.0,
+      "diastolicBP": 81.0,
+      "spo2": 97.0,
+      "temperature": 37.2,
+      "fetalHeartRate": 151.0
+    },
+    {
+      "timestamp": "2026-09-18T06:00:00+05:30",
+      "maternalHeartRate": 84.0,
+      "systolicBP": 131.0,
+      "diastolicBP": 81.0,
+      "spo2": 97.3,
+      "temperature": 37.1,
+      "fetalHeartRate": 153.0
+    },
+    {
+      "timestamp": "2026-09-18T07:12:00+05:30",
+      "maternalHeartRate": 86.0,
+      "systolicBP": 127.0,
+      "diastolicBP": 85.0,
+      "spo2": 97.4,
+      "temperature": 37.0,
+      "fetalHeartRate": 156.0
+    },
+    {
+      "timestamp": "2026-09-18T08:24:00+05:30",
+      "maternalHeartRate": 84.0,
+      "systolicBP": 135.0,
+      "diastolicBP": 84.0,
+      "spo2": 96.3,
+      "temperature": 37.0,
+      "fetalHeartRate": 160.0
+    },
+    {
+      "timestamp": "2026-09-18T09:36:00+05:30",
+      "maternalHeartRate": 86.0,
+      "systolicBP": 135.0,
+      "diastolicBP": 85.0,
+      "spo2": 97.8,
+      "temperature": 37.1,
+      "fetalHeartRate": 162.0
+    },
+    {
+      "timestamp": "2026-09-18T10:48:00+05:30",
+      "maternalHeartRate": 89.0,
+      "systolicBP": 134.0,
+      "diastolicBP": 86.0,
+      "spo2": 97.0,
+      "temperature": 37.2,
+      "fetalHeartRate": 159.0
+    },
+    {
+      "timestamp": "2026-09-18T12:00:00+05:30",
+      "maternalHeartRate": 90.0,
+      "systolicBP": 136.0,
+      "diastolicBP": 85.0,
+      "spo2": 96.6,
+      "temperature": 37.0,
+      "fetalHeartRate": 161.0
+    }
+  ],
+  "P0003": [
+    {
+      "timestamp": "2026-09-16T13:30:00+05:30",
+      "maternalHeartRate": 76.0,
+      "systolicBP": 118.0,
+      "diastolicBP": 74.0,
+      "spo2": 98.6,
+      "temperature": 36.4,
+      "fetalHeartRate": 141.0
+    },
+    {
+      "timestamp": "2026-09-16T15:00:00+05:30",
+      "maternalHeartRate": 73.0,
+      "systolicBP": 117.0,
+      "diastolicBP": 74.0,
+      "spo2": 98.4,
+      "temperature": 36.4,
+      "fetalHeartRate": 145.0
+    },
+    {
+      "timestamp": "2026-09-16T16:30:00+05:30",
+      "maternalHeartRate": 77.0,
+      "systolicBP": 115.0,
+      "diastolicBP": 74.0,
+      "spo2": 99.1,
+      "temperature": 36.5,
+      "fetalHeartRate": 142.0
+    },
+    {
+      "timestamp": "2026-09-16T18:00:00+05:30",
+      "maternalHeartRate": 76.0,
+      "systolicBP": 123.0,
+      "diastolicBP": 75.0,
+      "spo2": 99.3,
+      "temperature": 36.6,
+      "fetalHeartRate": 146.0
+    },
+    {
+      "timestamp": "2026-09-16T19:30:00+05:30",
+      "maternalHeartRate": 76.0,
+      "systolicBP": 116.0,
+      "diastolicBP": 74.0,
+      "spo2": 99.4,
+      "temperature": 36.6,
+      "fetalHeartRate": 147.0
+    },
+    {
+      "timestamp": "2026-09-16T21:00:00+05:30",
+      "maternalHeartRate": 77.0,
+      "systolicBP": 122.0,
+      "diastolicBP": 75.0,
+      "spo2": 99.2,
+      "temperature": 36.4,
+      "fetalHeartRate": 141.0
+    },
+    {
+      "timestamp": "2026-09-16T22:30:00+05:30",
+      "maternalHeartRate": 77.0,
+      "systolicBP": 116.0,
+      "diastolicBP": 74.0,
+      "spo2": 99.3,
+      "temperature": 36.5,
+      "fetalHeartRate": 140.0
+    },
+    {
+      "timestamp": "2026-09-17T00:00:00+05:30",
+      "maternalHeartRate": 78.0,
+      "systolicBP": 117.0,
+      "diastolicBP": 76.0,
+      "spo2": 98.2,
+      "temperature": 36.5,
+      "fetalHeartRate": 143.0
+    },
+    {
+      "timestamp": "2026-09-17T01:30:00+05:30",
+      "maternalHeartRate": 75.0,
+      "systolicBP": 121.0,
+      "diastolicBP": 72.0,
+      "spo2": 98.9,
+      "temperature": 36.4,
+      "fetalHeartRate": 140.0
+    },
+    {
+      "timestamp": "2026-09-17T03:00:00+05:30",
+      "maternalHeartRate": 76.0,
+      "systolicBP": 117.0,
+      "diastolicBP": 76.0,
+      "spo2": 98.8,
+      "temperature": 36.6,
+      "fetalHeartRate": 143.0
+    },
+    {
+      "timestamp": "2026-09-17T04:30:00+05:30",
+      "maternalHeartRate": 76.0,
+      "systolicBP": 115.0,
+      "diastolicBP": 71.0,
+      "spo2": 99.1,
+      "temperature": 36.6,
+      "fetalHeartRate": 138.0
+    },
+    {
+      "timestamp": "2026-09-17T06:00:00+05:30",
+      "maternalHeartRate": 78.0,
+      "systolicBP": 120.0,
+      "diastolicBP": 74.0,
+      "spo2": 99.4,
+      "temperature": 36.6,
+      "fetalHeartRate": 135.0
+    },
+    {
+      "timestamp": "2026-09-17T07:30:00+05:30",
+      "maternalHeartRate": 74.0,
+      "systolicBP": 114.0,
+      "diastolicBP": 71.0,
+      "spo2": 99.3,
+      "temperature": 36.5,
+      "fetalHeartRate": 134.0
+    },
+    {
+      "timestamp": "2026-09-17T09:00:00+05:30",
+      "maternalHeartRate": 77.0,
+      "systolicBP": 118.0,
+      "diastolicBP": 70.0,
+      "spo2": 99.2,
+      "temperature": 36.6,
+      "fetalHeartRate": 133.0
+    },
+    {
+      "timestamp": "2026-09-17T10:30:00+05:30",
+      "maternalHeartRate": 77.0,
+      "systolicBP": 118.0,
+      "diastolicBP": 69.0,
+      "spo2": 98.2,
+      "temperature": 36.4,
+      "fetalHeartRate": 136.0
+    },
+    {
+      "timestamp": "2026-09-17T12:00:00+05:30",
+      "maternalHeartRate": 78.0,
+      "systolicBP": 113.0,
+      "diastolicBP": 72.0,
+      "spo2": 98.3,
+      "temperature": 36.6,
+      "fetalHeartRate": 135.0
+    },
+    {
+      "timestamp": "2026-09-17T13:30:00+05:30",
+      "maternalHeartRate": 72.0,
+      "systolicBP": 115.0,
+      "diastolicBP": 73.0,
+      "spo2": 99.2,
+      "temperature": 36.4,
+      "fetalHeartRate": 137.0
+    },
+    {
+      "timestamp": "2026-09-17T15:00:00+05:30",
+      "maternalHeartRate": 75.0,
+      "systolicBP": 111.0,
+      "diastolicBP": 70.0,
+      "spo2": 98.8,
+      "temperature": 36.5,
+      "fetalHeartRate": 131.0
+    },
+    {
+      "timestamp": "2026-09-17T16:30:00+05:30",
+      "maternalHeartRate": 75.0,
+      "systolicBP": 114.0,
+      "diastolicBP": 67.0,
+      "spo2": 99.7,
+      "temperature": 36.5,
+      "fetalHeartRate": 135.0
+    },
+    {
+      "timestamp": "2026-09-17T18:00:00+05:30",
+      "maternalHeartRate": 73.0,
+      "systolicBP": 110.0,
+      "diastolicBP": 71.0,
+      "spo2": 99.7,
+      "temperature": 36.4,
+      "fetalHeartRate": 134.0
+    },
+    {
+      "timestamp": "2026-09-17T19:30:00+05:30",
+      "maternalHeartRate": 71.0,
+      "systolicBP": 110.0,
+      "diastolicBP": 69.0,
+      "spo2": 99.4,
+      "temperature": 36.4,
+      "fetalHeartRate": 135.0
+    },
+    {
+      "timestamp": "2026-09-17T21:00:00+05:30",
+      "maternalHeartRate": 73.0,
+      "systolicBP": 107.0,
+      "diastolicBP": 71.0,
+      "spo2": 98.6,
+      "temperature": 36.5,
+      "fetalHeartRate": 133.0
+    },
+    {
+      "timestamp": "2026-09-17T22:30:00+05:30",
+      "maternalHeartRate": 70.0,
+      "systolicBP": 106.0,
+      "diastolicBP": 71.0,
+      "spo2": 98.5,
+      "temperature": 36.4,
+      "fetalHeartRate": 135.0
+    },
+    {
+      "timestamp": "2026-09-18T00:00:00+05:30",
+      "maternalHeartRate": 69.0,
+      "systolicBP": 113.0,
+      "diastolicBP": 70.0,
+      "spo2": 98.6,
+      "temperature": 36.4,
+      "fetalHeartRate": 137.0
+    },
+    {
+      "timestamp": "2026-09-18T01:30:00+05:30",
+      "maternalHeartRate": 68.0,
+      "systolicBP": 112.0,
+      "diastolicBP": 69.0,
+      "spo2": 99.4,
+      "temperature": 36.6,
+      "fetalHeartRate": 136.0
+    },
+    {
+      "timestamp": "2026-09-18T03:00:00+05:30",
+      "maternalHeartRate": 70.0,
+      "systolicBP": 114.0,
+      "diastolicBP": 67.0,
+      "spo2": 98.6,
+      "temperature": 36.6,
+      "fetalHeartRate": 134.0
+    },
+    {
+      "timestamp": "2026-09-18T04:30:00+05:30",
+      "maternalHeartRate": 71.0,
+      "systolicBP": 112.0,
+      "diastolicBP": 70.0,
+      "spo2": 98.9,
+      "temperature": 36.6,
+      "fetalHeartRate": 136.0
+    },
+    {
+      "timestamp": "2026-09-18T06:00:00+05:30",
+      "maternalHeartRate": 72.0,
+      "systolicBP": 111.0,
+      "diastolicBP": 69.0,
+      "spo2": 98.4,
+      "temperature": 36.4,
+      "fetalHeartRate": 135.0
+    },
+    {
+      "timestamp": "2026-09-18T07:30:00+05:30",
+      "maternalHeartRate": 71.0,
+      "systolicBP": 116.0,
+      "diastolicBP": 69.0,
+      "spo2": 98.5,
+      "temperature": 36.5,
+      "fetalHeartRate": 141.0
+    },
+    {
+      "timestamp": "2026-09-18T09:00:00+05:30",
+      "maternalHeartRate": 75.0,
+      "systolicBP": 115.0,
+      "diastolicBP": 70.0,
+      "spo2": 98.4,
+      "temperature": 36.4,
+      "fetalHeartRate": 138.0
+    },
+    {
+      "timestamp": "2026-09-18T10:30:00+05:30",
+      "maternalHeartRate": 71.0,
+      "systolicBP": 112.0,
+      "diastolicBP": 73.0,
+      "spo2": 98.6,
+      "temperature": 36.6,
+      "fetalHeartRate": 142.0
+    },
+    {
+      "timestamp": "2026-09-18T12:00:00+05:30",
+      "maternalHeartRate": 74.0,
+      "systolicBP": 114.0,
+      "diastolicBP": 75.0,
+      "spo2": 99.0,
+      "temperature": 36.6,
+      "fetalHeartRate": 143.0
+    }
+  ],
+  "P0004": [
+    {
+      "timestamp": "2026-09-16T13:00:00+05:30",
+      "maternalHeartRate": 102.0,
+      "systolicBP": 150.0,
+      "diastolicBP": 94.0,
+      "spo2": 95.3,
+      "temperature": 37.5,
+      "fetalHeartRate": 167.0
+    },
+    {
+      "timestamp": "2026-09-16T14:00:00+05:30",
+      "maternalHeartRate": 104.0,
+      "systolicBP": 150.0,
+      "diastolicBP": 93.0,
+      "spo2": 96.2,
+      "temperature": 37.3,
+      "fetalHeartRate": 165.0
+    },
+    {
+      "timestamp": "2026-09-16T15:00:00+05:30",
+      "maternalHeartRate": 103.0,
+      "systolicBP": 150.0,
+      "diastolicBP": 99.0,
+      "spo2": 95.4,
+      "temperature": 37.5,
+      "fetalHeartRate": 169.0
+    },
+    {
+      "timestamp": "2026-09-16T16:00:00+05:30",
+      "maternalHeartRate": 105.0,
+      "systolicBP": 150.0,
+      "diastolicBP": 96.0,
+      "spo2": 95.9,
+      "temperature": 37.4,
+      "fetalHeartRate": 171.0
+    },
+    {
+      "timestamp": "2026-09-16T17:00:00+05:30",
+      "maternalHeartRate": 107.0,
+      "systolicBP": 151.0,
+      "diastolicBP": 97.0,
+      "spo2": 96.2,
+      "temperature": 37.5,
+      "fetalHeartRate": 172.0
+    },
+    {
+      "timestamp": "2026-09-16T18:00:00+05:30",
+      "maternalHeartRate": 103.0,
+      "systolicBP": 150.0,
+      "diastolicBP": 98.0,
+      "spo2": 95.5,
+      "temperature": 37.3,
+      "fetalHeartRate": 165.0
+    },
+    {
+      "timestamp": "2026-09-16T19:00:00+05:30",
+      "maternalHeartRate": 102.0,
+      "systolicBP": 152.0,
+      "diastolicBP": 97.0,
+      "spo2": 95.7,
+      "temperature": 37.3,
+      "fetalHeartRate": 170.0
+    },
+    {
+      "timestamp": "2026-09-16T20:00:00+05:30",
+      "maternalHeartRate": 106.0,
+      "systolicBP": 153.0,
+      "diastolicBP": 98.0,
+      "spo2": 96.7,
+      "temperature": 37.5,
+      "fetalHeartRate": 169.0
+    },
+    {
+      "timestamp": "2026-09-16T21:00:00+05:30",
+      "maternalHeartRate": 106.0,
+      "systolicBP": 156.0,
+      "diastolicBP": 97.0,
+      "spo2": 96.1,
+      "temperature": 37.4,
+      "fetalHeartRate": 171.0
+    },
+    {
+      "timestamp": "2026-09-16T22:00:00+05:30",
+      "maternalHeartRate": 108.0,
+      "systolicBP": 150.0,
+      "diastolicBP": 95.0,
+      "spo2": 95.7,
+      "temperature": 37.5,
+      "fetalHeartRate": 167.0
+    },
+    {
+      "timestamp": "2026-09-16T23:00:00+05:30",
+      "maternalHeartRate": 105.0,
+      "systolicBP": 150.0,
+      "diastolicBP": 98.0,
+      "spo2": 96.3,
+      "temperature": 37.5,
+      "fetalHeartRate": 166.0
+    },
+    {
+      "timestamp": "2026-09-17T00:00:00+05:30",
+      "maternalHeartRate": 106.0,
+      "systolicBP": 149.0,
+      "diastolicBP": 94.0,
+      "spo2": 95.9,
+      "temperature": 37.3,
+      "fetalHeartRate": 164.0
+    },
+    {
+      "timestamp": "2026-09-17T01:00:00+05:30",
+      "maternalHeartRate": 104.0,
+      "systolicBP": 156.0,
+      "diastolicBP": 99.0,
+      "spo2": 96.1,
+      "temperature": 37.5,
+      "fetalHeartRate": 169.0
+    },
+    {
+      "timestamp": "2026-09-17T02:00:00+05:30",
+      "maternalHeartRate": 107.0,
+      "systolicBP": 150.0,
+      "diastolicBP": 94.0,
+      "spo2": 96.4,
+      "temperature": 37.4,
+      "fetalHeartRate": 166.0
+    },
+    {
+      "timestamp": "2026-09-17T03:00:00+05:30",
+      "maternalHeartRate": 108.0,
+      "systolicBP": 149.0,
+      "diastolicBP": 97.0,
+      "spo2": 96.2,
+      "temperature": 37.4,
+      "fetalHeartRate": 161.0
+    },
+    {
+      "timestamp": "2026-09-17T04:00:00+05:30",
+      "maternalHeartRate": 105.0,
+      "systolicBP": 150.0,
+      "diastolicBP": 97.0,
+      "spo2": 96.6,
+      "temperature": 37.3,
+      "fetalHeartRate": 165.0
+    },
+    {
+      "timestamp": "2026-09-17T05:00:00+05:30",
+      "maternalHeartRate": 104.0,
+      "systolicBP": 154.0,
+      "diastolicBP": 97.0,
+      "spo2": 96.1,
+      "temperature": 37.4,
+      "fetalHeartRate": 161.0
+    },
+    {
+      "timestamp": "2026-09-17T06:00:00+05:30",
+      "maternalHeartRate": 104.0,
+      "systolicBP": 154.0,
+      "diastolicBP": 95.0,
+      "spo2": 96.0,
+      "temperature": 37.5,
+      "fetalHeartRate": 163.0
+    },
+    {
+      "timestamp": "2026-09-17T07:00:00+05:30",
+      "maternalHeartRate": 105.0,
+      "systolicBP": 149.0,
+      "diastolicBP": 93.0,
+      "spo2": 95.8,
+      "temperature": 37.5,
+      "fetalHeartRate": 162.0
+    },
+    {
+      "timestamp": "2026-09-17T08:00:00+05:30",
+      "maternalHeartRate": 106.0,
+      "systolicBP": 146.0,
+      "diastolicBP": 95.0,
+      "spo2": 96.7,
+      "temperature": 37.4,
+      "fetalHeartRate": 162.0
+    },
+    {
+      "timestamp": "2026-09-17T09:00:00+05:30",
+      "maternalHeartRate": 102.0,
+      "systolicBP": 152.0,
+      "diastolicBP": 95.0,
+      "spo2": 95.6,
+      "temperature": 37.3,
+      "fetalHeartRate": 160.0
+    },
+    {
+      "timestamp": "2026-09-17T10:00:00+05:30",
+      "maternalHeartRate": 104.0,
+      "systolicBP": 144.0,
+      "diastolicBP": 97.0,
+      "spo2": 96.7,
+      "temperature": 37.4,
+      "fetalHeartRate": 156.0
+    },
+    {
+      "timestamp": "2026-09-17T11:00:00+05:30",
+      "maternalHeartRate": 105.0,
+      "systolicBP": 147.0,
+      "diastolicBP": 95.0,
+      "spo2": 96.0,
+      "temperature": 37.3,
+      "fetalHeartRate": 161.0
+    },
+    {
+      "timestamp": "2026-09-17T12:00:00+05:30",
+      "maternalHeartRate": 105.0,
+      "systolicBP": 144.0,
+      "diastolicBP": 93.0,
+      "spo2": 95.8,
+      "temperature": 37.5,
+      "fetalHeartRate": 157.0
+    },
+    {
+      "timestamp": "2026-09-17T13:00:00+05:30",
+      "maternalHeartRate": 104.0,
+      "systolicBP": 149.0,
+      "diastolicBP": 91.0,
+      "spo2": 96.5,
+      "temperature": 37.4,
+      "fetalHeartRate": 160.0
+    },
+    {
+      "timestamp": "2026-09-17T14:00:00+05:30",
+      "maternalHeartRate": 102.0,
+      "systolicBP": 148.0,
+      "diastolicBP": 91.0,
+      "spo2": 95.7,
+      "temperature": 37.4,
+      "fetalHeartRate": 161.0
+    },
+    {
+      "timestamp": "2026-09-17T15:00:00+05:30",
+      "maternalHeartRate": 101.0,
+      "systolicBP": 142.0,
+      "diastolicBP": 92.0,
+      "spo2": 95.8,
+      "temperature": 37.4,
+      "fetalHeartRate": 157.0
+    },
+    {
+      "timestamp": "2026-09-17T16:00:00+05:30",
+      "maternalHeartRate": 100.0,
+      "systolicBP": 143.0,
+      "diastolicBP": 90.0,
+      "spo2": 96.3,
+      "temperature": 37.4,
+      "fetalHeartRate": 154.0
+    },
+    {
+      "timestamp": "2026-09-17T17:00:00+05:30",
+      "maternalHeartRate": 102.0,
+      "systolicBP": 140.0,
+      "diastolicBP": 93.0,
+      "spo2": 96.3,
+      "temperature": 37.5,
+      "fetalHeartRate": 155.0
+    },
+    {
+      "timestamp": "2026-09-17T18:00:00+05:30",
+      "maternalHeartRate": 101.0,
+      "systolicBP": 146.0,
+      "diastolicBP": 94.0,
+      "spo2": 96.0,
+      "temperature": 37.3,
+      "fetalHeartRate": 156.0
+    },
+    {
+      "timestamp": "2026-09-17T19:00:00+05:30",
+      "maternalHeartRate": 100.0,
+      "systolicBP": 146.0,
+      "diastolicBP": 93.0,
+      "spo2": 95.9,
+      "temperature": 37.4,
+      "fetalHeartRate": 156.0
+    },
+    {
+      "timestamp": "2026-09-17T20:00:00+05:30",
+      "maternalHeartRate": 100.0,
+      "systolicBP": 142.0,
+      "diastolicBP": 92.0,
+      "spo2": 95.4,
+      "temperature": 37.4,
+      "fetalHeartRate": 160.0
+    },
+    {
+      "timestamp": "2026-09-17T21:00:00+05:30",
+      "maternalHeartRate": 98.0,
+      "systolicBP": 145.0,
+      "diastolicBP": 92.0,
+      "spo2": 96.6,
+      "temperature": 37.5,
+      "fetalHeartRate": 160.0
+    },
+    {
+      "timestamp": "2026-09-17T22:00:00+05:30",
+      "maternalHeartRate": 98.0,
+      "systolicBP": 142.0,
+      "diastolicBP": 92.0,
+      "spo2": 96.4,
+      "temperature": 37.5,
+      "fetalHeartRate": 153.0
+    },
+    {
+      "timestamp": "2026-09-17T23:00:00+05:30",
+      "maternalHeartRate": 96.0,
+      "systolicBP": 144.0,
+      "diastolicBP": 94.0,
+      "spo2": 96.8,
+      "temperature": 37.5,
+      "fetalHeartRate": 157.0
+    },
+    {
+      "timestamp": "2026-09-18T00:00:00+05:30",
+      "maternalHeartRate": 96.0,
+      "systolicBP": 144.0,
+      "diastolicBP": 93.0,
+      "spo2": 95.9,
+      "temperature": 37.5,
+      "fetalHeartRate": 161.0
+    },
+    {
+      "timestamp": "2026-09-18T01:00:00+05:30",
+      "maternalHeartRate": 95.0,
+      "systolicBP": 146.0,
+      "diastolicBP": 90.0,
+      "spo2": 95.8,
+      "temperature": 37.3,
+      "fetalHeartRate": 159.0
+    },
+    {
+      "timestamp": "2026-09-18T02:00:00+05:30",
+      "maternalHeartRate": 98.0,
+      "systolicBP": 146.0,
+      "diastolicBP": 90.0,
+      "spo2": 95.3,
+      "temperature": 37.5,
+      "fetalHeartRate": 160.0
+    },
+    {
+      "timestamp": "2026-09-18T03:00:00+05:30",
+      "maternalHeartRate": 97.0,
+      "systolicBP": 148.0,
+      "diastolicBP": 90.0,
+      "spo2": 95.9,
+      "temperature": 37.3,
+      "fetalHeartRate": 158.0
+    },
+    {
+      "timestamp": "2026-09-18T04:00:00+05:30",
+      "maternalHeartRate": 95.0,
+      "systolicBP": 147.0,
+      "diastolicBP": 95.0,
+      "spo2": 96.3,
+      "temperature": 37.3,
+      "fetalHeartRate": 160.0
+    },
+    {
+      "timestamp": "2026-09-18T05:00:00+05:30",
+      "maternalHeartRate": 98.0,
+      "systolicBP": 146.0,
+      "diastolicBP": 93.0,
+      "spo2": 95.9,
+      "temperature": 37.3,
+      "fetalHeartRate": 164.0
+    },
+    {
+      "timestamp": "2026-09-18T06:00:00+05:30",
+      "maternalHeartRate": 97.0,
+      "systolicBP": 145.0,
+      "diastolicBP": 93.0,
+      "spo2": 95.6,
+      "temperature": 37.4,
+      "fetalHeartRate": 163.0
+    },
+    {
+      "timestamp": "2026-09-18T07:00:00+05:30",
+      "maternalHeartRate": 102.0,
+      "systolicBP": 145.0,
+      "diastolicBP": 96.0,
+      "spo2": 96.3,
+      "temperature": 37.3,
+      "fetalHeartRate": 164.0
+    },
+    {
+      "timestamp": "2026-09-18T08:00:00+05:30",
+      "maternalHeartRate": 101.0,
+      "systolicBP": 149.0,
+      "diastolicBP": 91.0,
+      "spo2": 96.2,
+      "temperature": 37.4,
+      "fetalHeartRate": 167.0
+    },
+    {
+      "timestamp": "2026-09-18T09:00:00+05:30",
+      "maternalHeartRate": 99.0,
+      "systolicBP": 150.0,
+      "diastolicBP": 95.0,
+      "spo2": 95.8,
+      "temperature": 37.4,
+      "fetalHeartRate": 166.0
+    },
+    {
+      "timestamp": "2026-09-18T10:00:00+05:30",
+      "maternalHeartRate": 102.0,
+      "systolicBP": 150.0,
+      "diastolicBP": 95.0,
+      "spo2": 96.5,
+      "temperature": 37.4,
+      "fetalHeartRate": 169.0
+    },
+    {
+      "timestamp": "2026-09-18T11:00:00+05:30",
+      "maternalHeartRate": 102.0,
+      "systolicBP": 148.0,
+      "diastolicBP": 94.0,
+      "spo2": 96.1,
+      "temperature": 37.5,
+      "fetalHeartRate": 163.0
+    },
+    {
+      "timestamp": "2026-09-18T12:00:00+05:30",
+      "maternalHeartRate": 100.0,
+      "systolicBP": 152.0,
+      "diastolicBP": 93.0,
+      "spo2": 95.4,
+      "temperature": 37.4,
+      "fetalHeartRate": 170.0
+    }
+  ],
+  "P0005": [
+    {
+      "timestamp": "2026-09-16T14:00:00+05:30",
+      "maternalHeartRate": 80.0,
+      "systolicBP": 118.0,
+      "diastolicBP": 73.0,
+      "spo2": 98.6,
+      "temperature": 36.7,
+      "fetalHeartRate": 149.0
+    },
+    {
+      "timestamp": "2026-09-16T16:00:00+05:30",
+      "maternalHeartRate": 83.0,
+      "systolicBP": 117.0,
+      "diastolicBP": 71.0,
+      "spo2": 98.4,
+      "temperature": 36.7,
+      "fetalHeartRate": 147.0
+    },
+    {
+      "timestamp": "2026-09-16T18:00:00+05:30",
+      "maternalHeartRate": 85.0,
+      "systolicBP": 119.0,
+      "diastolicBP": 74.0,
+      "spo2": 99.8,
+      "temperature": 36.7,
+      "fetalHeartRate": 152.0
+    },
+    {
+      "timestamp": "2026-09-16T20:00:00+05:30",
+      "maternalHeartRate": 82.0,
+      "systolicBP": 119.0,
+      "diastolicBP": 70.0,
+      "spo2": 99.1,
+      "temperature": 36.6,
+      "fetalHeartRate": 151.0
+    },
+    {
+      "timestamp": "2026-09-16T22:00:00+05:30",
+      "maternalHeartRate": 84.0,
+      "systolicBP": 118.0,
+      "diastolicBP": 75.0,
+      "spo2": 99.7,
+      "temperature": 36.5,
+      "fetalHeartRate": 147.0
+    },
+    {
+      "timestamp": "2026-09-17T00:00:00+05:30",
+      "maternalHeartRate": 81.0,
+      "systolicBP": 120.0,
+      "diastolicBP": 73.0,
+      "spo2": 99.7,
+      "temperature": 36.5,
+      "fetalHeartRate": 145.0
+    },
+    {
+      "timestamp": "2026-09-17T02:00:00+05:30",
+      "maternalHeartRate": 86.0,
+      "systolicBP": 120.0,
+      "diastolicBP": 71.0,
+      "spo2": 98.9,
+      "temperature": 36.5,
+      "fetalHeartRate": 151.0
+    },
+    {
+      "timestamp": "2026-09-17T04:00:00+05:30",
+      "maternalHeartRate": 83.0,
+      "systolicBP": 116.0,
+      "diastolicBP": 70.0,
+      "spo2": 99.6,
+      "temperature": 36.5,
+      "fetalHeartRate": 145.0
+    },
+    {
+      "timestamp": "2026-09-17T06:00:00+05:30",
+      "maternalHeartRate": 84.0,
+      "systolicBP": 117.0,
+      "diastolicBP": 74.0,
+      "spo2": 98.9,
+      "temperature": 36.7,
+      "fetalHeartRate": 142.0
+    },
+    {
+      "timestamp": "2026-09-17T08:00:00+05:30",
+      "maternalHeartRate": 82.0,
+      "systolicBP": 110.0,
+      "diastolicBP": 71.0,
+      "spo2": 98.9,
+      "temperature": 36.7,
+      "fetalHeartRate": 139.0
+    },
+    {
+      "timestamp": "2026-09-17T10:00:00+05:30",
+      "maternalHeartRate": 81.0,
+      "systolicBP": 112.0,
+      "diastolicBP": 73.0,
+      "spo2": 99.6,
+      "temperature": 36.5,
+      "fetalHeartRate": 143.0
+    },
+    {
+      "timestamp": "2026-09-17T12:00:00+05:30",
+      "maternalHeartRate": 81.0,
+      "systolicBP": 115.0,
+      "diastolicBP": 68.0,
+      "spo2": 98.8,
+      "temperature": 36.5,
+      "fetalHeartRate": 137.0
+    },
+    {
+      "timestamp": "2026-09-17T14:00:00+05:30",
+      "maternalHeartRate": 82.0,
+      "systolicBP": 109.0,
+      "diastolicBP": 70.0,
+      "spo2": 99.2,
+      "temperature": 36.6,
+      "fetalHeartRate": 135.0
+    },
+    {
+      "timestamp": "2026-09-17T16:00:00+05:30",
+      "maternalHeartRate": 81.0,
+      "systolicBP": 106.0,
+      "diastolicBP": 66.0,
+      "spo2": 99.1,
+      "temperature": 36.5,
+      "fetalHeartRate": 140.0
+    },
+    {
+      "timestamp": "2026-09-17T18:00:00+05:30",
+      "maternalHeartRate": 76.0,
+      "systolicBP": 105.0,
+      "diastolicBP": 70.0,
+      "spo2": 98.7,
+      "temperature": 36.5,
+      "fetalHeartRate": 141.0
+    },
+    {
+      "timestamp": "2026-09-17T20:00:00+05:30",
+      "maternalHeartRate": 74.0,
+      "systolicBP": 110.0,
+      "diastolicBP": 65.0,
+      "spo2": 98.4,
+      "temperature": 36.5,
+      "fetalHeartRate": 136.0
+    },
+    {
+      "timestamp": "2026-09-17T22:00:00+05:30",
+      "maternalHeartRate": 78.0,
+      "systolicBP": 103.0,
+      "diastolicBP": 64.0,
+      "spo2": 99.5,
+      "temperature": 36.5,
+      "fetalHeartRate": 137.0
+    },
+    {
+      "timestamp": "2026-09-18T00:00:00+05:30",
+      "maternalHeartRate": 74.0,
+      "systolicBP": 104.0,
+      "diastolicBP": 69.0,
+      "spo2": 99.0,
+      "temperature": 36.7,
+      "fetalHeartRate": 139.0
+    },
+    {
+      "timestamp": "2026-09-18T02:00:00+05:30",
+      "maternalHeartRate": 78.0,
+      "systolicBP": 108.0,
+      "diastolicBP": 65.0,
+      "spo2": 99.0,
+      "temperature": 36.7,
+      "fetalHeartRate": 137.0
+    },
+    {
+      "timestamp": "2026-09-18T04:00:00+05:30",
+      "maternalHeartRate": 78.0,
+      "systolicBP": 111.0,
+      "diastolicBP": 68.0,
+      "spo2": 98.9,
+      "temperature": 36.7,
+      "fetalHeartRate": 139.0
+    },
+    {
+      "timestamp": "2026-09-18T06:00:00+05:30",
+      "maternalHeartRate": 76.0,
+      "systolicBP": 109.0,
+      "diastolicBP": 70.0,
+      "spo2": 99.0,
+      "temperature": 36.7,
+      "fetalHeartRate": 140.0
+    },
+    {
+      "timestamp": "2026-09-18T08:00:00+05:30",
+      "maternalHeartRate": 75.0,
+      "systolicBP": 111.0,
+      "diastolicBP": 67.0,
+      "spo2": 98.6,
+      "temperature": 36.6,
+      "fetalHeartRate": 146.0
+    },
+    {
+      "timestamp": "2026-09-18T10:00:00+05:30",
+      "maternalHeartRate": 77.0,
+      "systolicBP": 116.0,
+      "diastolicBP": 70.0,
+      "spo2": 98.9,
+      "temperature": 36.6,
+      "fetalHeartRate": 144.0
+    },
+    {
+      "timestamp": "2026-09-18T12:00:00+05:30",
+      "maternalHeartRate": 80.0,
+      "systolicBP": 116.0,
+      "diastolicBP": 72.0,
+      "spo2": 99.4,
+      "temperature": 36.7,
+      "fetalHeartRate": 146.0
+    }
+  ],
+  "P0006": [
+    {
+      "timestamp": "2026-09-16T13:12:00+05:30",
+      "maternalHeartRate": 85.0,
+      "systolicBP": 128.0,
+      "diastolicBP": 82.0,
+      "spo2": 96.9,
+      "temperature": 36.9,
+      "fetalHeartRate": 150.0
+    },
+    {
+      "timestamp": "2026-09-16T14:24:00+05:30",
+      "maternalHeartRate": 85.0,
+      "systolicBP": 132.0,
+      "diastolicBP": 83.0,
+      "spo2": 96.4,
+      "temperature": 37.0,
+      "fetalHeartRate": 150.0
+    },
+    {
+      "timestamp": "2026-09-16T15:36:00+05:30",
+      "maternalHeartRate": 88.0,
+      "systolicBP": 128.0,
+      "diastolicBP": 82.0,
+      "spo2": 97.4,
+      "temperature": 37.0,
+      "fetalHeartRate": 154.0
+    },
+    {
+      "timestamp": "2026-09-16T16:48:00+05:30",
+      "maternalHeartRate": 87.0,
+      "systolicBP": 133.0,
+      "diastolicBP": 83.0,
+      "spo2": 96.4,
+      "temperature": 36.9,
+      "fetalHeartRate": 155.0
+    },
+    {
+      "timestamp": "2026-09-16T18:00:00+05:30",
+      "maternalHeartRate": 89.0,
+      "systolicBP": 135.0,
+      "diastolicBP": 86.0,
+      "spo2": 97.7,
+      "temperature": 36.9,
+      "fetalHeartRate": 153.0
+    },
+    {
+      "timestamp": "2026-09-16T19:12:00+05:30",
+      "maternalHeartRate": 88.0,
+      "systolicBP": 130.0,
+      "diastolicBP": 86.0,
+      "spo2": 96.6,
+      "temperature": 36.8,
+      "fetalHeartRate": 157.0
+    },
+    {
+      "timestamp": "2026-09-16T20:24:00+05:30",
+      "maternalHeartRate": 87.0,
+      "systolicBP": 135.0,
+      "diastolicBP": 85.0,
+      "spo2": 97.5,
+      "temperature": 37.0,
+      "fetalHeartRate": 157.0
+    },
+    {
+      "timestamp": "2026-09-16T21:36:00+05:30",
+      "maternalHeartRate": 90.0,
+      "systolicBP": 134.0,
+      "diastolicBP": 86.0,
+      "spo2": 96.2,
+      "temperature": 37.0,
+      "fetalHeartRate": 156.0
+    },
+    {
+      "timestamp": "2026-09-16T22:48:00+05:30",
+      "maternalHeartRate": 87.0,
+      "systolicBP": 130.0,
+      "diastolicBP": 86.0,
+      "spo2": 96.7,
+      "temperature": 36.9,
+      "fetalHeartRate": 149.0
+    },
+    {
+      "timestamp": "2026-09-17T00:00:00+05:30",
+      "maternalHeartRate": 91.0,
+      "systolicBP": 133.0,
+      "diastolicBP": 84.0,
+      "spo2": 96.4,
+      "temperature": 36.9,
+      "fetalHeartRate": 148.0
+    },
+    {
+      "timestamp": "2026-09-17T01:12:00+05:30",
+      "maternalHeartRate": 90.0,
+      "systolicBP": 130.0,
+      "diastolicBP": 84.0,
+      "spo2": 96.7,
+      "temperature": 36.9,
+      "fetalHeartRate": 153.0
+    },
+    {
+      "timestamp": "2026-09-17T02:24:00+05:30",
+      "maternalHeartRate": 91.0,
+      "systolicBP": 132.0,
+      "diastolicBP": 82.0,
+      "spo2": 96.3,
+      "temperature": 36.8,
+      "fetalHeartRate": 151.0
+    },
+    {
+      "timestamp": "2026-09-17T03:36:00+05:30",
+      "maternalHeartRate": 90.0,
+      "systolicBP": 130.0,
+      "diastolicBP": 85.0,
+      "spo2": 97.0,
+      "temperature": 36.9,
+      "fetalHeartRate": 148.0
+    },
+    {
+      "timestamp": "2026-09-17T04:48:00+05:30",
+      "maternalHeartRate": 90.0,
+      "systolicBP": 128.0,
+      "diastolicBP": 83.0,
+      "spo2": 96.7,
+      "temperature": 37.0,
+      "fetalHeartRate": 148.0
+    },
+    {
+      "timestamp": "2026-09-17T06:00:00+05:30",
+      "maternalHeartRate": 89.0,
+      "systolicBP": 127.0,
+      "diastolicBP": 83.0,
+      "spo2": 97.2,
+      "temperature": 36.8,
+      "fetalHeartRate": 146.0
+    },
+    {
+      "timestamp": "2026-09-17T07:12:00+05:30",
+      "maternalHeartRate": 86.0,
+      "systolicBP": 127.0,
+      "diastolicBP": 81.0,
+      "spo2": 96.7,
+      "temperature": 36.8,
+      "fetalHeartRate": 149.0
+    },
+    {
+      "timestamp": "2026-09-17T08:24:00+05:30",
+      "maternalHeartRate": 85.0,
+      "systolicBP": 128.0,
+      "diastolicBP": 84.0,
+      "spo2": 97.0,
+      "temperature": 37.0,
+      "fetalHeartRate": 148.0
+    },
+    {
+      "timestamp": "2026-09-17T09:36:00+05:30",
+      "maternalHeartRate": 84.0,
+      "systolicBP": 131.0,
+      "diastolicBP": 79.0,
+      "spo2": 96.2,
+      "temperature": 37.0,
+      "fetalHeartRate": 148.0
+    },
+    {
+      "timestamp": "2026-09-17T10:48:00+05:30",
+      "maternalHeartRate": 87.0,
+      "systolicBP": 128.0,
+      "diastolicBP": 83.0,
+      "spo2": 96.9,
+      "temperature": 36.8,
+      "fetalHeartRate": 140.0
+    },
+    {
+      "timestamp": "2026-09-17T12:00:00+05:30",
+      "maternalHeartRate": 85.0,
+      "systolicBP": 129.0,
+      "diastolicBP": 82.0,
+      "spo2": 97.5,
+      "temperature": 37.0,
+      "fetalHeartRate": 140.0
+    },
+    {
+      "timestamp": "2026-09-17T13:12:00+05:30",
+      "maternalHeartRate": 87.0,
+      "systolicBP": 124.0,
+      "diastolicBP": 81.0,
+      "spo2": 97.0,
+      "temperature": 36.9,
+      "fetalHeartRate": 141.0
+    },
+    {
+      "timestamp": "2026-09-17T14:24:00+05:30",
+      "maternalHeartRate": 83.0,
+      "systolicBP": 124.0,
+      "diastolicBP": 78.0,
+      "spo2": 97.0,
+      "temperature": 36.8,
+      "fetalHeartRate": 143.0
+    },
+    {
+      "timestamp": "2026-09-17T15:36:00+05:30",
+      "maternalHeartRate": 86.0,
+      "systolicBP": 123.0,
+      "diastolicBP": 81.0,
+      "spo2": 97.5,
+      "temperature": 37.0,
+      "fetalHeartRate": 140.0
+    },
+    {
+      "timestamp": "2026-09-17T16:48:00+05:30",
+      "maternalHeartRate": 81.0,
+      "systolicBP": 121.0,
+      "diastolicBP": 80.0,
+      "spo2": 97.4,
+      "temperature": 36.9,
+      "fetalHeartRate": 139.0
+    },
+    {
+      "timestamp": "2026-09-17T18:00:00+05:30",
+      "maternalHeartRate": 84.0,
+      "systolicBP": 123.0,
+      "diastolicBP": 81.0,
+      "spo2": 97.4,
+      "temperature": 36.9,
+      "fetalHeartRate": 145.0
+    },
+    {
+      "timestamp": "2026-09-17T19:12:00+05:30",
+      "maternalHeartRate": 83.0,
+      "systolicBP": 124.0,
+      "diastolicBP": 80.0,
+      "spo2": 97.6,
+      "temperature": 36.9,
+      "fetalHeartRate": 139.0
+    },
+    {
+      "timestamp": "2026-09-17T20:24:00+05:30",
+      "maternalHeartRate": 79.0,
+      "systolicBP": 123.0,
+      "diastolicBP": 78.0,
+      "spo2": 96.6,
+      "temperature": 36.8,
+      "fetalHeartRate": 142.0
+    },
+    {
+      "timestamp": "2026-09-17T21:36:00+05:30",
+      "maternalHeartRate": 80.0,
+      "systolicBP": 123.0,
+      "diastolicBP": 76.0,
+      "spo2": 97.5,
+      "temperature": 36.8,
+      "fetalHeartRate": 146.0
+    },
+    {
+      "timestamp": "2026-09-17T22:48:00+05:30",
+      "maternalHeartRate": 83.0,
+      "systolicBP": 124.0,
+      "diastolicBP": 79.0,
+      "spo2": 96.9,
+      "temperature": 36.9,
+      "fetalHeartRate": 146.0
+    },
+    {
+      "timestamp": "2026-09-18T00:00:00+05:30",
+      "maternalHeartRate": 83.0,
+      "systolicBP": 123.0,
+      "diastolicBP": 81.0,
+      "spo2": 97.2,
+      "temperature": 36.8,
+      "fetalHeartRate": 144.0
+    },
+    {
+      "timestamp": "2026-09-18T01:12:00+05:30",
+      "maternalHeartRate": 79.0,
+      "systolicBP": 120.0,
+      "diastolicBP": 77.0,
+      "spo2": 97.6,
+      "temperature": 36.9,
+      "fetalHeartRate": 146.0
+    },
+    {
+      "timestamp": "2026-09-18T02:24:00+05:30",
+      "maternalHeartRate": 81.0,
+      "systolicBP": 121.0,
+      "diastolicBP": 78.0,
+      "spo2": 96.9,
+      "temperature": 36.9,
+      "fetalHeartRate": 146.0
+    },
+    {
+      "timestamp": "2026-09-18T03:36:00+05:30",
+      "maternalHeartRate": 79.0,
+      "systolicBP": 124.0,
+      "diastolicBP": 79.0,
+      "spo2": 96.9,
+      "temperature": 36.9,
+      "fetalHeartRate": 147.0
+    },
+    {
+      "timestamp": "2026-09-18T04:48:00+05:30",
+      "maternalHeartRate": 83.0,
+      "systolicBP": 126.0,
+      "diastolicBP": 78.0,
+      "spo2": 96.4,
+      "temperature": 37.0,
+      "fetalHeartRate": 146.0
+    },
+    {
+      "timestamp": "2026-09-18T06:00:00+05:30",
+      "maternalHeartRate": 83.0,
+      "systolicBP": 127.0,
+      "diastolicBP": 83.0,
+      "spo2": 97.6,
+      "temperature": 36.9,
+      "fetalHeartRate": 149.0
+    },
+    {
+      "timestamp": "2026-09-18T07:12:00+05:30",
+      "maternalHeartRate": 80.0,
+      "systolicBP": 125.0,
+      "diastolicBP": 84.0,
+      "spo2": 97.3,
+      "temperature": 36.9,
+      "fetalHeartRate": 150.0
+    },
+    {
+      "timestamp": "2026-09-18T08:24:00+05:30",
+      "maternalHeartRate": 85.0,
+      "systolicBP": 126.0,
+      "diastolicBP": 81.0,
+      "spo2": 97.5,
+      "temperature": 37.0,
+      "fetalHeartRate": 152.0
+    },
+    {
+      "timestamp": "2026-09-18T09:36:00+05:30",
+      "maternalHeartRate": 85.0,
+      "systolicBP": 130.0,
+      "diastolicBP": 83.0,
+      "spo2": 97.0,
+      "temperature": 36.9,
+      "fetalHeartRate": 150.0
+    },
+    {
+      "timestamp": "2026-09-18T10:48:00+05:30",
+      "maternalHeartRate": 83.0,
+      "systolicBP": 128.0,
+      "diastolicBP": 81.0,
+      "spo2": 96.5,
+      "temperature": 37.0,
+      "fetalHeartRate": 152.0
+    },
+    {
+      "timestamp": "2026-09-18T12:00:00+05:30",
+      "maternalHeartRate": 83.0,
+      "systolicBP": 127.0,
+      "diastolicBP": 80.0,
+      "spo2": 97.6,
+      "temperature": 36.8,
+      "fetalHeartRate": 155.0
+    }
+  ],
+  "P0007": [
+    {
+      "timestamp": "2026-09-16T14:00:00+05:30",
+      "maternalHeartRate": 78.0,
+      "systolicBP": 121.0,
+      "diastolicBP": 73.0,
+      "spo2": 97.7,
+      "temperature": 36.7,
+      "fetalHeartRate": 142.0
+    },
+    {
+      "timestamp": "2026-09-16T16:00:00+05:30",
+      "maternalHeartRate": 76.0,
+      "systolicBP": 117.0,
+      "diastolicBP": 78.0,
+      "spo2": 98.4,
+      "temperature": 36.7,
+      "fetalHeartRate": 143.0
+    },
+    {
+      "timestamp": "2026-09-16T18:00:00+05:30",
+      "maternalHeartRate": 78.0,
+      "systolicBP": 120.0,
+      "diastolicBP": 78.0,
+      "spo2": 97.6,
+      "temperature": 36.6,
+      "fetalHeartRate": 144.0
+    },
+    {
+      "timestamp": "2026-09-16T20:00:00+05:30",
+      "maternalHeartRate": 80.0,
+      "systolicBP": 120.0,
+      "diastolicBP": 77.0,
+      "spo2": 97.7,
+      "temperature": 36.7,
+      "fetalHeartRate": 146.0
+    },
+    {
+      "timestamp": "2026-09-16T22:00:00+05:30",
+      "maternalHeartRate": 81.0,
+      "systolicBP": 120.0,
+      "diastolicBP": 80.0,
+      "spo2": 98.8,
+      "temperature": 36.6,
+      "fetalHeartRate": 144.0
+    },
+    {
+      "timestamp": "2026-09-17T00:00:00+05:30",
+      "maternalHeartRate": 79.0,
+      "systolicBP": 121.0,
+      "diastolicBP": 80.0,
+      "spo2": 98.5,
+      "temperature": 36.7,
+      "fetalHeartRate": 142.0
+    },
+    {
+      "timestamp": "2026-09-17T02:00:00+05:30",
+      "maternalHeartRate": 79.0,
+      "systolicBP": 122.0,
+      "diastolicBP": 79.0,
+      "spo2": 98.1,
+      "temperature": 36.5,
+      "fetalHeartRate": 146.0
+    },
+    {
+      "timestamp": "2026-09-17T04:00:00+05:30",
+      "maternalHeartRate": 82.0,
+      "systolicBP": 118.0,
+      "diastolicBP": 78.0,
+      "spo2": 97.6,
+      "temperature": 36.7,
+      "fetalHeartRate": 139.0
+    },
+    {
+      "timestamp": "2026-09-17T06:00:00+05:30",
+      "maternalHeartRate": 79.0,
+      "systolicBP": 122.0,
+      "diastolicBP": 74.0,
+      "spo2": 97.9,
+      "temperature": 36.6,
+      "fetalHeartRate": 136.0
+    },
+    {
+      "timestamp": "2026-09-17T08:00:00+05:30",
+      "maternalHeartRate": 76.0,
+      "systolicBP": 117.0,
+      "diastolicBP": 73.0,
+      "spo2": 98.8,
+      "temperature": 36.6,
+      "fetalHeartRate": 135.0
+    },
+    {
+      "timestamp": "2026-09-17T10:00:00+05:30",
+      "maternalHeartRate": 81.0,
+      "systolicBP": 119.0,
+      "diastolicBP": 75.0,
+      "spo2": 98.5,
+      "temperature": 36.5,
+      "fetalHeartRate": 136.0
+    },
+    {
+      "timestamp": "2026-09-17T12:00:00+05:30",
+      "maternalHeartRate": 79.0,
+      "systolicBP": 116.0,
+      "diastolicBP": 71.0,
+      "spo2": 98.3,
+      "temperature": 36.6,
+      "fetalHeartRate": 132.0
+    },
+    {
+      "timestamp": "2026-09-17T14:00:00+05:30",
+      "maternalHeartRate": 73.0,
+      "systolicBP": 112.0,
+      "diastolicBP": 75.0,
+      "spo2": 98.1,
+      "temperature": 36.7,
+      "fetalHeartRate": 135.0
+    },
+    {
+      "timestamp": "2026-09-17T16:00:00+05:30",
+      "maternalHeartRate": 73.0,
+      "systolicBP": 111.0,
+      "diastolicBP": 71.0,
+      "spo2": 97.3,
+      "temperature": 36.6,
+      "fetalHeartRate": 137.0
+    },
+    {
+      "timestamp": "2026-09-17T18:00:00+05:30",
+      "maternalHeartRate": 74.0,
+      "systolicBP": 109.0,
+      "diastolicBP": 74.0,
+      "spo2": 98.2,
+      "temperature": 36.5,
+      "fetalHeartRate": 134.0
+    },
+    {
+      "timestamp": "2026-09-17T20:00:00+05:30",
+      "maternalHeartRate": 72.0,
+      "systolicBP": 108.0,
+      "diastolicBP": 71.0,
+      "spo2": 98.2,
+      "temperature": 36.5,
+      "fetalHeartRate": 133.0
+    },
+    {
+      "timestamp": "2026-09-17T22:00:00+05:30",
+      "maternalHeartRate": 74.0,
+      "systolicBP": 108.0,
+      "diastolicBP": 74.0,
+      "spo2": 97.3,
+      "temperature": 36.6,
+      "fetalHeartRate": 135.0
+    },
+    {
+      "timestamp": "2026-09-18T00:00:00+05:30",
+      "maternalHeartRate": 75.0,
+      "systolicBP": 112.0,
+      "diastolicBP": 70.0,
+      "spo2": 98.0,
+      "temperature": 36.6,
+      "fetalHeartRate": 139.0
+    },
+    {
+      "timestamp": "2026-09-18T02:00:00+05:30",
+      "maternalHeartRate": 71.0,
+      "systolicBP": 108.0,
+      "diastolicBP": 73.0,
+      "spo2": 97.8,
+      "temperature": 36.7,
+      "fetalHeartRate": 138.0
+    },
+    {
+      "timestamp": "2026-09-18T04:00:00+05:30",
+      "maternalHeartRate": 74.0,
+      "systolicBP": 114.0,
+      "diastolicBP": 71.0,
+      "spo2": 97.3,
+      "temperature": 36.6,
+      "fetalHeartRate": 141.0
+    },
+    {
+      "timestamp": "2026-09-18T06:00:00+05:30",
+      "maternalHeartRate": 71.0,
+      "systolicBP": 116.0,
+      "diastolicBP": 72.0,
+      "spo2": 98.3,
+      "temperature": 36.6,
+      "fetalHeartRate": 142.0
+    },
+    {
+      "timestamp": "2026-09-18T08:00:00+05:30",
+      "maternalHeartRate": 71.0,
+      "systolicBP": 117.0,
+      "diastolicBP": 73.0,
+      "spo2": 97.7,
+      "temperature": 36.5,
+      "fetalHeartRate": 139.0
+    },
+    {
+      "timestamp": "2026-09-18T10:00:00+05:30",
+      "maternalHeartRate": 71.0,
+      "systolicBP": 119.0,
+      "diastolicBP": 74.0,
+      "spo2": 98.8,
+      "temperature": 36.6,
+      "fetalHeartRate": 141.0
+    },
+    {
+      "timestamp": "2026-09-18T12:00:00+05:30",
+      "maternalHeartRate": 76.0,
+      "systolicBP": 115.0,
+      "diastolicBP": 74.0,
+      "spo2": 98.4,
+      "temperature": 36.7,
+      "fetalHeartRate": 143.0
+    }
+  ],
+  "P0008": [
+    {
+      "timestamp": "2026-09-16T13:00:00+05:30",
+      "maternalHeartRate": 94.0,
+      "systolicBP": 143.0,
+      "diastolicBP": 94.0,
+      "spo2": 96.4,
+      "temperature": 37.4,
+      "fetalHeartRate": 162.0
+    },
+    {
+      "timestamp": "2026-09-16T14:00:00+05:30",
+      "maternalHeartRate": 99.0,
+      "systolicBP": 145.0,
+      "diastolicBP": 92.0,
+      "spo2": 96.7,
+      "temperature": 37.3,
+      "fetalHeartRate": 166.0
+    },
+    {
+      "timestamp": "2026-09-16T15:00:00+05:30",
+      "maternalHeartRate": 98.0,
+      "systolicBP": 142.0,
+      "diastolicBP": 93.0,
+      "spo2": 96.5,
+      "temperature": 37.3,
+      "fetalHeartRate": 162.0
+    },
+    {
+      "timestamp": "2026-09-16T16:00:00+05:30",
+      "maternalHeartRate": 95.0,
+      "systolicBP": 147.0,
+      "diastolicBP": 91.0,
+      "spo2": 96.2,
+      "temperature": 37.3,
+      "fetalHeartRate": 165.0
+    },
+    {
+      "timestamp": "2026-09-16T17:00:00+05:30",
+      "maternalHeartRate": 97.0,
+      "systolicBP": 143.0,
+      "diastolicBP": 95.0,
+      "spo2": 95.8,
+      "temperature": 37.4,
+      "fetalHeartRate": 162.0
+    },
+    {
+      "timestamp": "2026-09-16T18:00:00+05:30",
+      "maternalHeartRate": 101.0,
+      "systolicBP": 150.0,
+      "diastolicBP": 90.0,
+      "spo2": 96.2,
+      "temperature": 37.3,
+      "fetalHeartRate": 166.0
+    },
+    {
+      "timestamp": "2026-09-16T19:00:00+05:30",
+      "maternalHeartRate": 100.0,
+      "systolicBP": 150.0,
+      "diastolicBP": 91.0,
+      "spo2": 96.2,
+      "temperature": 37.4,
+      "fetalHeartRate": 160.0
+    },
+    {
+      "timestamp": "2026-09-16T20:00:00+05:30",
+      "maternalHeartRate": 97.0,
+      "systolicBP": 149.0,
+      "diastolicBP": 92.0,
+      "spo2": 95.8,
+      "temperature": 37.3,
+      "fetalHeartRate": 164.0
+    },
+    {
+      "timestamp": "2026-09-16T21:00:00+05:30",
+      "maternalHeartRate": 101.0,
+      "systolicBP": 151.0,
+      "diastolicBP": 92.0,
+      "spo2": 96.4,
+      "temperature": 37.3,
+      "fetalHeartRate": 164.0
+    },
+    {
+      "timestamp": "2026-09-16T22:00:00+05:30",
+      "maternalHeartRate": 99.0,
+      "systolicBP": 148.0,
+      "diastolicBP": 91.0,
+      "spo2": 95.4,
+      "temperature": 37.4,
+      "fetalHeartRate": 163.0
+    },
+    {
+      "timestamp": "2026-09-16T23:00:00+05:30",
+      "maternalHeartRate": 99.0,
+      "systolicBP": 147.0,
+      "diastolicBP": 91.0,
+      "spo2": 95.6,
+      "temperature": 37.3,
+      "fetalHeartRate": 166.0
+    },
+    {
+      "timestamp": "2026-09-17T00:00:00+05:30",
+      "maternalHeartRate": 99.0,
+      "systolicBP": 150.0,
+      "diastolicBP": 93.0,
+      "spo2": 95.4,
+      "temperature": 37.4,
+      "fetalHeartRate": 161.0
+    },
+    {
+      "timestamp": "2026-09-17T01:00:00+05:30",
+      "maternalHeartRate": 102.0,
+      "systolicBP": 146.0,
+      "diastolicBP": 90.0,
+      "spo2": 96.3,
+      "temperature": 37.4,
+      "fetalHeartRate": 160.0
+    },
+    {
+      "timestamp": "2026-09-17T02:00:00+05:30",
+      "maternalHeartRate": 99.0,
+      "systolicBP": 143.0,
+      "diastolicBP": 93.0,
+      "spo2": 96.6,
+      "temperature": 37.4,
+      "fetalHeartRate": 162.0
+    },
+    {
+      "timestamp": "2026-09-17T03:00:00+05:30",
+      "maternalHeartRate": 102.0,
+      "systolicBP": 147.0,
+      "diastolicBP": 94.0,
+      "spo2": 96.0,
+      "temperature": 37.2,
+      "fetalHeartRate": 157.0
+    },
+    {
+      "timestamp": "2026-09-17T04:00:00+05:30",
+      "maternalHeartRate": 98.0,
+      "systolicBP": 147.0,
+      "diastolicBP": 89.0,
+      "spo2": 96.1,
+      "temperature": 37.3,
+      "fetalHeartRate": 161.0
+    },
+    {
+      "timestamp": "2026-09-17T05:00:00+05:30",
+      "maternalHeartRate": 100.0,
+      "systolicBP": 145.0,
+      "diastolicBP": 89.0,
+      "spo2": 95.7,
+      "temperature": 37.4,
+      "fetalHeartRate": 160.0
+    },
+    {
+      "timestamp": "2026-09-17T06:00:00+05:30",
+      "maternalHeartRate": 99.0,
+      "systolicBP": 146.0,
+      "diastolicBP": 93.0,
+      "spo2": 95.3,
+      "temperature": 37.4,
+      "fetalHeartRate": 159.0
+    },
+    {
+      "timestamp": "2026-09-17T07:00:00+05:30",
+      "maternalHeartRate": 99.0,
+      "systolicBP": 145.0,
+      "diastolicBP": 90.0,
+      "spo2": 96.6,
+      "temperature": 37.4,
+      "fetalHeartRate": 158.0
+    },
+    {
+      "timestamp": "2026-09-17T08:00:00+05:30",
+      "maternalHeartRate": 97.0,
+      "systolicBP": 146.0,
+      "diastolicBP": 90.0,
+      "spo2": 96.7,
+      "temperature": 37.2,
+      "fetalHeartRate": 153.0
+    },
+    {
+      "timestamp": "2026-09-17T09:00:00+05:30",
+      "maternalHeartRate": 96.0,
+      "systolicBP": 139.0,
+      "diastolicBP": 89.0,
+      "spo2": 96.3,
+      "temperature": 37.3,
+      "fetalHeartRate": 159.0
+    },
+    {
+      "timestamp": "2026-09-17T10:00:00+05:30",
+      "maternalHeartRate": 100.0,
+      "systolicBP": 144.0,
+      "diastolicBP": 88.0,
+      "spo2": 96.2,
+      "temperature": 37.3,
+      "fetalHeartRate": 152.0
+    },
+    {
+      "timestamp": "2026-09-17T11:00:00+05:30",
+      "maternalHeartRate": 96.0,
+      "systolicBP": 141.0,
+      "diastolicBP": 89.0,
+      "spo2": 95.5,
+      "temperature": 37.4,
+      "fetalHeartRate": 151.0
+    },
+    {
+      "timestamp": "2026-09-17T12:00:00+05:30",
+      "maternalHeartRate": 97.0,
+      "systolicBP": 142.0,
+      "diastolicBP": 90.0,
+      "spo2": 96.5,
+      "temperature": 37.3,
+      "fetalHeartRate": 156.0
+    },
+    {
+      "timestamp": "2026-09-17T13:00:00+05:30",
+      "maternalHeartRate": 93.0,
+      "systolicBP": 136.0,
+      "diastolicBP": 89.0,
+      "spo2": 96.1,
+      "temperature": 37.3,
+      "fetalHeartRate": 155.0
+    },
+    {
+      "timestamp": "2026-09-17T14:00:00+05:30",
+      "maternalHeartRate": 95.0,
+      "systolicBP": 140.0,
+      "diastolicBP": 88.0,
+      "spo2": 96.2,
+      "temperature": 37.2,
+      "fetalHeartRate": 156.0
+    },
+    {
+      "timestamp": "2026-09-17T15:00:00+05:30",
+      "maternalHeartRate": 95.0,
+      "systolicBP": 141.0,
+      "diastolicBP": 89.0,
+      "spo2": 95.7,
+      "temperature": 37.2,
+      "fetalHeartRate": 149.0
+    },
+    {
+      "timestamp": "2026-09-17T16:00:00+05:30",
+      "maternalHeartRate": 94.0,
+      "systolicBP": 138.0,
+      "diastolicBP": 86.0,
+      "spo2": 96.2,
+      "temperature": 37.2,
+      "fetalHeartRate": 154.0
+    },
+    {
+      "timestamp": "2026-09-17T17:00:00+05:30",
+      "maternalHeartRate": 95.0,
+      "systolicBP": 141.0,
+      "diastolicBP": 90.0,
+      "spo2": 95.4,
+      "temperature": 37.3,
+      "fetalHeartRate": 152.0
+    },
+    {
+      "timestamp": "2026-09-17T18:00:00+05:30",
+      "maternalHeartRate": 92.0,
+      "systolicBP": 137.0,
+      "diastolicBP": 86.0,
+      "spo2": 95.6,
+      "temperature": 37.2,
+      "fetalHeartRate": 150.0
+    },
+    {
+      "timestamp": "2026-09-17T19:00:00+05:30",
+      "maternalHeartRate": 92.0,
+      "systolicBP": 138.0,
+      "diastolicBP": 86.0,
+      "spo2": 96.6,
+      "temperature": 37.2,
+      "fetalHeartRate": 151.0
+    },
+    {
+      "timestamp": "2026-09-17T20:00:00+05:30",
+      "maternalHeartRate": 93.0,
+      "systolicBP": 136.0,
+      "diastolicBP": 89.0,
+      "spo2": 96.0,
+      "temperature": 37.3,
+      "fetalHeartRate": 152.0
+    },
+    {
+      "timestamp": "2026-09-17T21:00:00+05:30",
+      "maternalHeartRate": 91.0,
+      "systolicBP": 133.0,
+      "diastolicBP": 90.0,
+      "spo2": 96.0,
+      "temperature": 37.4,
+      "fetalHeartRate": 150.0
+    },
+    {
+      "timestamp": "2026-09-17T22:00:00+05:30",
+      "maternalHeartRate": 91.0,
+      "systolicBP": 133.0,
+      "diastolicBP": 87.0,
+      "spo2": 96.6,
+      "temperature": 37.3,
+      "fetalHeartRate": 153.0
+    },
+    {
+      "timestamp": "2026-09-17T23:00:00+05:30",
+      "maternalHeartRate": 92.0,
+      "systolicBP": 140.0,
+      "diastolicBP": 87.0,
+      "spo2": 96.6,
+      "temperature": 37.4,
+      "fetalHeartRate": 156.0
+    },
+    {
+      "timestamp": "2026-09-18T00:00:00+05:30",
+      "maternalHeartRate": 91.0,
+      "systolicBP": 137.0,
+      "diastolicBP": 88.0,
+      "spo2": 95.5,
+      "temperature": 37.3,
+      "fetalHeartRate": 151.0
+    },
+    {
+      "timestamp": "2026-09-18T01:00:00+05:30",
+      "maternalHeartRate": 92.0,
+      "systolicBP": 140.0,
+      "diastolicBP": 86.0,
+      "spo2": 96.8,
+      "temperature": 37.4,
+      "fetalHeartRate": 152.0
+    },
+    {
+      "timestamp": "2026-09-18T02:00:00+05:30",
+      "maternalHeartRate": 95.0,
+      "systolicBP": 137.0,
+      "diastolicBP": 89.0,
+      "spo2": 95.7,
+      "temperature": 37.4,
+      "fetalHeartRate": 157.0
+    },
+    {
+      "timestamp": "2026-09-18T03:00:00+05:30",
+      "maternalHeartRate": 90.0,
+      "systolicBP": 138.0,
+      "diastolicBP": 88.0,
+      "spo2": 95.3,
+      "temperature": 37.2,
+      "fetalHeartRate": 155.0
+    },
+    {
+      "timestamp": "2026-09-18T04:00:00+05:30",
+      "maternalHeartRate": 92.0,
+      "systolicBP": 139.0,
+      "diastolicBP": 89.0,
+      "spo2": 96.0,
+      "temperature": 37.2,
+      "fetalHeartRate": 158.0
+    },
+    {
+      "timestamp": "2026-09-18T05:00:00+05:30",
+      "maternalHeartRate": 91.0,
+      "systolicBP": 143.0,
+      "diastolicBP": 90.0,
+      "spo2": 95.7,
+      "temperature": 37.3,
+      "fetalHeartRate": 160.0
+    },
+    {
+      "timestamp": "2026-09-18T06:00:00+05:30",
+      "maternalHeartRate": 93.0,
+      "systolicBP": 142.0,
+      "diastolicBP": 88.0,
+      "spo2": 96.5,
+      "temperature": 37.3,
+      "fetalHeartRate": 160.0
+    },
+    {
+      "timestamp": "2026-09-18T07:00:00+05:30",
+      "maternalHeartRate": 96.0,
+      "systolicBP": 141.0,
+      "diastolicBP": 91.0,
+      "spo2": 96.4,
+      "temperature": 37.4,
+      "fetalHeartRate": 155.0
+    },
+    {
+      "timestamp": "2026-09-18T08:00:00+05:30",
+      "maternalHeartRate": 93.0,
+      "systolicBP": 145.0,
+      "diastolicBP": 91.0,
+      "spo2": 96.4,
+      "temperature": 37.3,
+      "fetalHeartRate": 162.0
+    },
+    {
+      "timestamp": "2026-09-18T09:00:00+05:30",
+      "maternalHeartRate": 95.0,
+      "systolicBP": 139.0,
+      "diastolicBP": 91.0,
+      "spo2": 96.2,
+      "temperature": 37.4,
+      "fetalHeartRate": 158.0
+    },
+    {
+      "timestamp": "2026-09-18T10:00:00+05:30",
+      "maternalHeartRate": 96.0,
+      "systolicBP": 139.0,
+      "diastolicBP": 93.0,
+      "spo2": 95.4,
+      "temperature": 37.2,
+      "fetalHeartRate": 160.0
+    },
+    {
+      "timestamp": "2026-09-18T11:00:00+05:30",
+      "maternalHeartRate": 93.0,
+      "systolicBP": 145.0,
+      "diastolicBP": 90.0,
+      "spo2": 96.4,
+      "temperature": 37.4,
+      "fetalHeartRate": 165.0
+    },
+    {
+      "timestamp": "2026-09-18T12:00:00+05:30",
+      "maternalHeartRate": 97.0,
+      "systolicBP": 140.0,
+      "diastolicBP": 89.0,
+      "spo2": 95.5,
+      "temperature": 37.2,
+      "fetalHeartRate": 164.0
+    }
+  ],
+  "P0009": [
+    {
+      "timestamp": "2026-09-16T13:30:00+05:30",
+      "maternalHeartRate": 72.0,
+      "systolicBP": 111.0,
+      "diastolicBP": 69.0,
+      "spo2": 99.7,
+      "temperature": 36.4,
+      "fetalHeartRate": 154.0
+    },
+    {
+      "timestamp": "2026-09-16T15:00:00+05:30",
+      "maternalHeartRate": 74.0,
+      "systolicBP": 115.0,
+      "diastolicBP": 73.0,
+      "spo2": 99.3,
+      "temperature": 36.4,
+      "fetalHeartRate": 153.0
+    },
+    {
+      "timestamp": "2026-09-16T16:30:00+05:30",
+      "maternalHeartRate": 72.0,
+      "systolicBP": 114.0,
+      "diastolicBP": 71.0,
+      "spo2": 99.8,
+      "temperature": 36.3,
+      "fetalHeartRate": 154.0
+    },
+    {
+      "timestamp": "2026-09-16T18:00:00+05:30",
+      "maternalHeartRate": 72.0,
+      "systolicBP": 116.0,
+      "diastolicBP": 72.0,
+      "spo2": 98.8,
+      "temperature": 36.5,
+      "fetalHeartRate": 158.0
+    },
+    {
+      "timestamp": "2026-09-16T19:30:00+05:30",
+      "maternalHeartRate": 73.0,
+      "systolicBP": 112.0,
+      "diastolicBP": 74.0,
+      "spo2": 98.8,
+      "temperature": 36.5,
+      "fetalHeartRate": 158.0
+    },
+    {
+      "timestamp": "2026-09-16T21:00:00+05:30",
+      "maternalHeartRate": 78.0,
+      "systolicBP": 117.0,
+      "diastolicBP": 72.0,
+      "spo2": 98.7,
+      "temperature": 36.5,
+      "fetalHeartRate": 154.0
+    },
+    {
+      "timestamp": "2026-09-16T22:30:00+05:30",
+      "maternalHeartRate": 75.0,
+      "systolicBP": 113.0,
+      "diastolicBP": 73.0,
+      "spo2": 98.5,
+      "temperature": 36.4,
+      "fetalHeartRate": 158.0
+    },
+    {
+      "timestamp": "2026-09-17T00:00:00+05:30",
+      "maternalHeartRate": 77.0,
+      "systolicBP": 112.0,
+      "diastolicBP": 74.0,
+      "spo2": 99.1,
+      "temperature": 36.3,
+      "fetalHeartRate": 156.0
+    },
+    {
+      "timestamp": "2026-09-17T01:30:00+05:30",
+      "maternalHeartRate": 76.0,
+      "systolicBP": 115.0,
+      "diastolicBP": 70.0,
+      "spo2": 98.9,
+      "temperature": 36.5,
+      "fetalHeartRate": 150.0
+    },
+    {
+      "timestamp": "2026-09-17T03:00:00+05:30",
+      "maternalHeartRate": 78.0,
+      "systolicBP": 110.0,
+      "diastolicBP": 73.0,
+      "spo2": 99.7,
+      "temperature": 36.4,
+      "fetalHeartRate": 156.0
+    },
+    {
+      "timestamp": "2026-09-17T04:30:00+05:30",
+      "maternalHeartRate": 78.0,
+      "systolicBP": 113.0,
+      "diastolicBP": 70.0,
+      "spo2": 99.7,
+      "temperature": 36.3,
+      "fetalHeartRate": 152.0
+    },
+    {
+      "timestamp": "2026-09-17T06:00:00+05:30",
+      "maternalHeartRate": 78.0,
+      "systolicBP": 109.0,
+      "diastolicBP": 72.0,
+      "spo2": 99.1,
+      "temperature": 36.5,
+      "fetalHeartRate": 153.0
+    },
+    {
+      "timestamp": "2026-09-17T07:30:00+05:30",
+      "maternalHeartRate": 77.0,
+      "systolicBP": 109.0,
+      "diastolicBP": 73.0,
+      "spo2": 98.5,
+      "temperature": 36.5,
+      "fetalHeartRate": 153.0
+    },
+    {
+      "timestamp": "2026-09-17T09:00:00+05:30",
+      "maternalHeartRate": 74.0,
+      "systolicBP": 110.0,
+      "diastolicBP": 73.0,
+      "spo2": 99.7,
+      "temperature": 36.5,
+      "fetalHeartRate": 151.0
+    },
+    {
+      "timestamp": "2026-09-17T10:30:00+05:30",
+      "maternalHeartRate": 71.0,
+      "systolicBP": 110.0,
+      "diastolicBP": 67.0,
+      "spo2": 99.8,
+      "temperature": 36.3,
+      "fetalHeartRate": 150.0
+    },
+    {
+      "timestamp": "2026-09-17T12:00:00+05:30",
+      "maternalHeartRate": 73.0,
+      "systolicBP": 108.0,
+      "diastolicBP": 72.0,
+      "spo2": 99.6,
+      "temperature": 36.4,
+      "fetalHeartRate": 143.0
+    },
+    {
+      "timestamp": "2026-09-17T13:30:00+05:30",
+      "maternalHeartRate": 70.0,
+      "systolicBP": 105.0,
+      "diastolicBP": 68.0,
+      "spo2": 98.6,
+      "temperature": 36.3,
+      "fetalHeartRate": 147.0
+    },
+    {
+      "timestamp": "2026-09-17T15:00:00+05:30",
+      "maternalHeartRate": 73.0,
+      "systolicBP": 107.0,
+      "diastolicBP": 70.0,
+      "spo2": 98.5,
+      "temperature": 36.5,
+      "fetalHeartRate": 148.0
+    },
+    {
+      "timestamp": "2026-09-17T16:30:00+05:30",
+      "maternalHeartRate": 72.0,
+      "systolicBP": 106.0,
+      "diastolicBP": 65.0,
+      "spo2": 99.3,
+      "temperature": 36.3,
+      "fetalHeartRate": 141.0
+    },
+    {
+      "timestamp": "2026-09-17T18:00:00+05:30",
+      "maternalHeartRate": 69.0,
+      "systolicBP": 104.0,
+      "diastolicBP": 66.0,
+      "spo2": 98.6,
+      "temperature": 36.5,
+      "fetalHeartRate": 148.0
+    },
+    {
+      "timestamp": "2026-09-17T19:30:00+05:30",
+      "maternalHeartRate": 68.0,
+      "systolicBP": 107.0,
+      "diastolicBP": 64.0,
+      "spo2": 99.2,
+      "temperature": 36.5,
+      "fetalHeartRate": 141.0
+    },
+    {
+      "timestamp": "2026-09-17T21:00:00+05:30",
+      "maternalHeartRate": 66.0,
+      "systolicBP": 103.0,
+      "diastolicBP": 66.0,
+      "spo2": 99.0,
+      "temperature": 36.5,
+      "fetalHeartRate": 146.0
+    },
+    {
+      "timestamp": "2026-09-17T22:30:00+05:30",
+      "maternalHeartRate": 67.0,
+      "systolicBP": 102.0,
+      "diastolicBP": 70.0,
+      "spo2": 98.7,
+      "temperature": 36.4,
+      "fetalHeartRate": 143.0
+    },
+    {
+      "timestamp": "2026-09-18T00:00:00+05:30",
+      "maternalHeartRate": 66.0,
+      "systolicBP": 102.0,
+      "diastolicBP": 69.0,
+      "spo2": 99.2,
+      "temperature": 36.4,
+      "fetalHeartRate": 146.0
+    },
+    {
+      "timestamp": "2026-09-18T01:30:00+05:30",
+      "maternalHeartRate": 68.0,
+      "systolicBP": 106.0,
+      "diastolicBP": 68.0,
+      "spo2": 98.5,
+      "temperature": 36.3,
+      "fetalHeartRate": 149.0
+    },
+    {
+      "timestamp": "2026-09-18T03:00:00+05:30",
+      "maternalHeartRate": 70.0,
+      "systolicBP": 103.0,
+      "diastolicBP": 67.0,
+      "spo2": 99.3,
+      "temperature": 36.3,
+      "fetalHeartRate": 148.0
+    },
+    {
+      "timestamp": "2026-09-18T04:30:00+05:30",
+      "maternalHeartRate": 66.0,
+      "systolicBP": 107.0,
+      "diastolicBP": 68.0,
+      "spo2": 99.1,
+      "temperature": 36.3,
+      "fetalHeartRate": 148.0
+    },
+    {
+      "timestamp": "2026-09-18T06:00:00+05:30",
+      "maternalHeartRate": 69.0,
+      "systolicBP": 105.0,
+      "diastolicBP": 67.0,
+      "spo2": 99.1,
+      "temperature": 36.3,
+      "fetalHeartRate": 150.0
+    },
+    {
+      "timestamp": "2026-09-18T07:30:00+05:30",
+      "maternalHeartRate": 71.0,
+      "systolicBP": 108.0,
+      "diastolicBP": 69.0,
+      "spo2": 98.9,
+      "temperature": 36.3,
+      "fetalHeartRate": 151.0
+    },
+    {
+      "timestamp": "2026-09-18T09:00:00+05:30",
+      "maternalHeartRate": 72.0,
+      "systolicBP": 111.0,
+      "diastolicBP": 69.0,
+      "spo2": 99.5,
+      "temperature": 36.5,
+      "fetalHeartRate": 153.0
+    },
+    {
+      "timestamp": "2026-09-18T10:30:00+05:30",
+      "maternalHeartRate": 68.0,
+      "systolicBP": 109.0,
+      "diastolicBP": 68.0,
+      "spo2": 99.8,
+      "temperature": 36.5,
+      "fetalHeartRate": 150.0
+    },
+    {
+      "timestamp": "2026-09-18T12:00:00+05:30",
+      "maternalHeartRate": 74.0,
+      "systolicBP": 108.0,
+      "diastolicBP": 70.0,
+      "spo2": 99.4,
+      "temperature": 36.5,
+      "fetalHeartRate": 158.0
+    }
+  ],
+  "P0010": [
+    {
+      "timestamp": "2026-09-16T14:00:00+05:30",
+      "maternalHeartRate": 76.0,
+      "systolicBP": 116.0,
+      "diastolicBP": 77.0,
+      "spo2": 97.8,
+      "temperature": 36.6,
+      "fetalHeartRate": 144.0
+    },
+    {
+      "timestamp": "2026-09-16T16:00:00+05:30",
+      "maternalHeartRate": 75.0,
+      "systolicBP": 119.0,
+      "diastolicBP": 76.0,
+      "spo2": 98.1,
+      "temperature": 36.5,
+      "fetalHeartRate": 140.0
+    },
+    {
+      "timestamp": "2026-09-16T18:00:00+05:30",
+      "maternalHeartRate": 75.0,
+      "systolicBP": 119.0,
+      "diastolicBP": 76.0,
+      "spo2": 98.4,
+      "temperature": 36.4,
+      "fetalHeartRate": 138.0
+    },
+    {
+      "timestamp": "2026-09-16T20:00:00+05:30",
+      "maternalHeartRate": 75.0,
+      "systolicBP": 117.0,
+      "diastolicBP": 77.0,
+      "spo2": 98.1,
+      "temperature": 36.5,
+      "fetalHeartRate": 144.0
+    },
+    {
+      "timestamp": "2026-09-16T22:00:00+05:30",
+      "maternalHeartRate": 77.0,
+      "systolicBP": 118.0,
+      "diastolicBP": 75.0,
+      "spo2": 98.7,
+      "temperature": 36.6,
+      "fetalHeartRate": 138.0
+    },
+    {
+      "timestamp": "2026-09-17T00:00:00+05:30",
+      "maternalHeartRate": 81.0,
+      "systolicBP": 118.0,
+      "diastolicBP": 78.0,
+      "spo2": 98.6,
+      "temperature": 36.4,
+      "fetalHeartRate": 138.0
+    },
+    {
+      "timestamp": "2026-09-17T02:00:00+05:30",
+      "maternalHeartRate": 77.0,
+      "systolicBP": 115.0,
+      "diastolicBP": 76.0,
+      "spo2": 98.3,
+      "temperature": 36.4,
+      "fetalHeartRate": 141.0
+    },
+    {
+      "timestamp": "2026-09-17T04:00:00+05:30",
+      "maternalHeartRate": 78.0,
+      "systolicBP": 115.0,
+      "diastolicBP": 73.0,
+      "spo2": 98.6,
+      "temperature": 36.4,
+      "fetalHeartRate": 138.0
+    },
+    {
+      "timestamp": "2026-09-17T06:00:00+05:30",
+      "maternalHeartRate": 77.0,
+      "systolicBP": 119.0,
+      "diastolicBP": 76.0,
+      "spo2": 97.7,
+      "temperature": 36.5,
+      "fetalHeartRate": 138.0
+    },
+    {
+      "timestamp": "2026-09-17T08:00:00+05:30",
+      "maternalHeartRate": 77.0,
+      "systolicBP": 114.0,
+      "diastolicBP": 72.0,
+      "spo2": 98.3,
+      "temperature": 36.4,
+      "fetalHeartRate": 133.0
+    },
+    {
+      "timestamp": "2026-09-17T10:00:00+05:30",
+      "maternalHeartRate": 74.0,
+      "systolicBP": 118.0,
+      "diastolicBP": 75.0,
+      "spo2": 98.7,
+      "temperature": 36.5,
+      "fetalHeartRate": 133.0
+    },
+    {
+      "timestamp": "2026-09-17T12:00:00+05:30",
+      "maternalHeartRate": 76.0,
+      "systolicBP": 117.0,
+      "diastolicBP": 75.0,
+      "spo2": 98.3,
+      "temperature": 36.6,
+      "fetalHeartRate": 131.0
+    },
+    {
+      "timestamp": "2026-09-17T14:00:00+05:30",
+      "maternalHeartRate": 74.0,
+      "systolicBP": 109.0,
+      "diastolicBP": 71.0,
+      "spo2": 98.4,
+      "temperature": 36.5,
+      "fetalHeartRate": 134.0
+    },
+    {
+      "timestamp": "2026-09-17T16:00:00+05:30",
+      "maternalHeartRate": 73.0,
+      "systolicBP": 112.0,
+      "diastolicBP": 73.0,
+      "spo2": 98.7,
+      "temperature": 36.5,
+      "fetalHeartRate": 134.0
+    },
+    {
+      "timestamp": "2026-09-17T18:00:00+05:30",
+      "maternalHeartRate": 73.0,
+      "systolicBP": 107.0,
+      "diastolicBP": 69.0,
+      "spo2": 97.5,
+      "temperature": 36.5,
+      "fetalHeartRate": 133.0
+    },
+    {
+      "timestamp": "2026-09-17T20:00:00+05:30",
+      "maternalHeartRate": 74.0,
+      "systolicBP": 106.0,
+      "diastolicBP": 71.0,
+      "spo2": 97.5,
+      "temperature": 36.4,
+      "fetalHeartRate": 132.0
+    },
+    {
+      "timestamp": "2026-09-17T22:00:00+05:30",
+      "maternalHeartRate": 72.0,
+      "systolicBP": 112.0,
+      "diastolicBP": 68.0,
+      "spo2": 98.4,
+      "temperature": 36.6,
+      "fetalHeartRate": 131.0
+    },
+    {
+      "timestamp": "2026-09-18T00:00:00+05:30",
+      "maternalHeartRate": 71.0,
+      "systolicBP": 112.0,
+      "diastolicBP": 69.0,
+      "spo2": 98.7,
+      "temperature": 36.4,
+      "fetalHeartRate": 135.0
+    },
+    {
+      "timestamp": "2026-09-18T02:00:00+05:30",
+      "maternalHeartRate": 74.0,
+      "systolicBP": 107.0,
+      "diastolicBP": 73.0,
+      "spo2": 98.0,
+      "temperature": 36.4,
+      "fetalHeartRate": 134.0
+    },
+    {
+      "timestamp": "2026-09-18T04:00:00+05:30",
+      "maternalHeartRate": 69.0,
+      "systolicBP": 114.0,
+      "diastolicBP": 71.0,
+      "spo2": 98.4,
+      "temperature": 36.5,
+      "fetalHeartRate": 134.0
+    },
+    {
+      "timestamp": "2026-09-18T06:00:00+05:30",
+      "maternalHeartRate": 71.0,
+      "systolicBP": 109.0,
+      "diastolicBP": 72.0,
+      "spo2": 98.0,
+      "temperature": 36.4,
+      "fetalHeartRate": 140.0
+    },
+    {
+      "timestamp": "2026-09-18T08:00:00+05:30",
+      "maternalHeartRate": 72.0,
+      "systolicBP": 115.0,
+      "diastolicBP": 75.0,
+      "spo2": 97.8,
+      "temperature": 36.5,
+      "fetalHeartRate": 138.0
+    },
+    {
+      "timestamp": "2026-09-18T10:00:00+05:30",
+      "maternalHeartRate": 71.0,
+      "systolicBP": 111.0,
+      "diastolicBP": 71.0,
+      "spo2": 98.7,
+      "temperature": 36.5,
+      "fetalHeartRate": 138.0
+    },
+    {
+      "timestamp": "2026-09-18T12:00:00+05:30",
+      "maternalHeartRate": 72.0,
+      "systolicBP": 114.0,
+      "diastolicBP": 73.0,
+      "spo2": 98.5,
+      "temperature": 36.5,
+      "fetalHeartRate": 141.0
+    }
+  ],
+  "P0011": [
+    {
+      "timestamp": "2026-09-16T13:12:00+05:30",
+      "maternalHeartRate": 91.0,
+      "systolicBP": 134.0,
+      "diastolicBP": 89.0,
+      "spo2": 97.7,
+      "temperature": 37.0,
+      "fetalHeartRate": 157.0
+    },
+    {
+      "timestamp": "2026-09-16T14:24:00+05:30",
+      "maternalHeartRate": 89.0,
+      "systolicBP": 139.0,
+      "diastolicBP": 86.0,
+      "spo2": 97.4,
+      "temperature": 37.0,
+      "fetalHeartRate": 161.0
+    },
+    {
+      "timestamp": "2026-09-16T15:36:00+05:30",
+      "maternalHeartRate": 91.0,
+      "systolicBP": 139.0,
+      "diastolicBP": 86.0,
+      "spo2": 96.3,
+      "temperature": 37.1,
+      "fetalHeartRate": 161.0
+    },
+    {
+      "timestamp": "2026-09-16T16:48:00+05:30",
+      "maternalHeartRate": 93.0,
+      "systolicBP": 140.0,
+      "diastolicBP": 88.0,
+      "spo2": 97.5,
+      "temperature": 36.9,
+      "fetalHeartRate": 160.0
+    },
+    {
+      "timestamp": "2026-09-16T18:00:00+05:30",
+      "maternalHeartRate": 89.0,
+      "systolicBP": 139.0,
+      "diastolicBP": 88.0,
+      "spo2": 97.2,
+      "temperature": 37.1,
+      "fetalHeartRate": 159.0
+    },
+    {
+      "timestamp": "2026-09-16T19:12:00+05:30",
+      "maternalHeartRate": 93.0,
+      "systolicBP": 139.0,
+      "diastolicBP": 86.0,
+      "spo2": 97.1,
+      "temperature": 36.9,
+      "fetalHeartRate": 158.0
+    },
+    {
+      "timestamp": "2026-09-16T20:24:00+05:30",
+      "maternalHeartRate": 92.0,
+      "systolicBP": 143.0,
+      "diastolicBP": 86.0,
+      "spo2": 97.5,
+      "temperature": 37.1,
+      "fetalHeartRate": 160.0
+    },
+    {
+      "timestamp": "2026-09-16T21:36:00+05:30",
+      "maternalHeartRate": 96.0,
+      "systolicBP": 136.0,
+      "diastolicBP": 87.0,
+      "spo2": 96.4,
+      "temperature": 36.9,
+      "fetalHeartRate": 157.0
+    },
+    {
+      "timestamp": "2026-09-16T22:48:00+05:30",
+      "maternalHeartRate": 96.0,
+      "systolicBP": 137.0,
+      "diastolicBP": 88.0,
+      "spo2": 96.8,
+      "temperature": 37.0,
+      "fetalHeartRate": 157.0
+    },
+    {
+      "timestamp": "2026-09-17T00:00:00+05:30",
+      "maternalHeartRate": 97.0,
+      "systolicBP": 137.0,
+      "diastolicBP": 90.0,
+      "spo2": 97.6,
+      "temperature": 37.0,
+      "fetalHeartRate": 159.0
+    },
+    {
+      "timestamp": "2026-09-17T01:12:00+05:30",
+      "maternalHeartRate": 96.0,
+      "systolicBP": 135.0,
+      "diastolicBP": 88.0,
+      "spo2": 97.1,
+      "temperature": 36.9,
+      "fetalHeartRate": 151.0
+    },
+    {
+      "timestamp": "2026-09-17T02:24:00+05:30",
+      "maternalHeartRate": 92.0,
+      "systolicBP": 138.0,
+      "diastolicBP": 88.0,
+      "spo2": 97.5,
+      "temperature": 37.0,
+      "fetalHeartRate": 157.0
+    },
+    {
+      "timestamp": "2026-09-17T03:36:00+05:30",
+      "maternalHeartRate": 91.0,
+      "systolicBP": 138.0,
+      "diastolicBP": 85.0,
+      "spo2": 96.5,
+      "temperature": 37.1,
+      "fetalHeartRate": 157.0
+    },
+    {
+      "timestamp": "2026-09-17T04:48:00+05:30",
+      "maternalHeartRate": 93.0,
+      "systolicBP": 133.0,
+      "diastolicBP": 85.0,
+      "spo2": 97.7,
+      "temperature": 37.1,
+      "fetalHeartRate": 153.0
+    },
+    {
+      "timestamp": "2026-09-17T06:00:00+05:30",
+      "maternalHeartRate": 90.0,
+      "systolicBP": 140.0,
+      "diastolicBP": 86.0,
+      "spo2": 97.7,
+      "temperature": 37.0,
+      "fetalHeartRate": 154.0
+    },
+    {
+      "timestamp": "2026-09-17T07:12:00+05:30",
+      "maternalHeartRate": 94.0,
+      "systolicBP": 135.0,
+      "diastolicBP": 84.0,
+      "spo2": 96.5,
+      "temperature": 36.9,
+      "fetalHeartRate": 153.0
+    },
+    {
+      "timestamp": "2026-09-17T08:24:00+05:30",
+      "maternalHeartRate": 92.0,
+      "systolicBP": 138.0,
+      "diastolicBP": 85.0,
+      "spo2": 97.4,
+      "temperature": 36.9,
+      "fetalHeartRate": 154.0
+    },
+    {
+      "timestamp": "2026-09-17T09:36:00+05:30",
+      "maternalHeartRate": 93.0,
+      "systolicBP": 134.0,
+      "diastolicBP": 89.0,
+      "spo2": 96.3,
+      "temperature": 37.0,
+      "fetalHeartRate": 152.0
+    },
+    {
+      "timestamp": "2026-09-17T10:48:00+05:30",
+      "maternalHeartRate": 90.0,
+      "systolicBP": 135.0,
+      "diastolicBP": 88.0,
+      "spo2": 96.8,
+      "temperature": 37.1,
+      "fetalHeartRate": 144.0
+    },
+    {
+      "timestamp": "2026-09-17T12:00:00+05:30",
+      "maternalHeartRate": 89.0,
+      "systolicBP": 136.0,
+      "diastolicBP": 85.0,
+      "spo2": 96.8,
+      "temperature": 37.1,
+      "fetalHeartRate": 147.0
+    },
+    {
+      "timestamp": "2026-09-17T13:12:00+05:30",
+      "maternalHeartRate": 91.0,
+      "systolicBP": 133.0,
+      "diastolicBP": 82.0,
+      "spo2": 97.2,
+      "temperature": 37.1,
+      "fetalHeartRate": 149.0
+    },
+    {
+      "timestamp": "2026-09-17T14:24:00+05:30",
+      "maternalHeartRate": 87.0,
+      "systolicBP": 128.0,
+      "diastolicBP": 85.0,
+      "spo2": 97.2,
+      "temperature": 37.1,
+      "fetalHeartRate": 145.0
+    },
+    {
+      "timestamp": "2026-09-17T15:36:00+05:30",
+      "maternalHeartRate": 86.0,
+      "systolicBP": 126.0,
+      "diastolicBP": 83.0,
+      "spo2": 96.8,
+      "temperature": 36.9,
+      "fetalHeartRate": 143.0
+    },
+    {
+      "timestamp": "2026-09-17T16:48:00+05:30",
+      "maternalHeartRate": 86.0,
+      "systolicBP": 129.0,
+      "diastolicBP": 84.0,
+      "spo2": 96.9,
+      "temperature": 36.9,
+      "fetalHeartRate": 145.0
+    },
+    {
+      "timestamp": "2026-09-17T18:00:00+05:30",
+      "maternalHeartRate": 85.0,
+      "systolicBP": 130.0,
+      "diastolicBP": 82.0,
+      "spo2": 96.8,
+      "temperature": 36.9,
+      "fetalHeartRate": 145.0
+    },
+    {
+      "timestamp": "2026-09-17T19:12:00+05:30",
+      "maternalHeartRate": 85.0,
+      "systolicBP": 132.0,
+      "diastolicBP": 86.0,
+      "spo2": 97.8,
+      "temperature": 37.0,
+      "fetalHeartRate": 143.0
+    },
+    {
+      "timestamp": "2026-09-17T20:24:00+05:30",
+      "maternalHeartRate": 86.0,
+      "systolicBP": 126.0,
+      "diastolicBP": 82.0,
+      "spo2": 97.0,
+      "temperature": 36.9,
+      "fetalHeartRate": 146.0
+    },
+    {
+      "timestamp": "2026-09-17T21:36:00+05:30",
+      "maternalHeartRate": 86.0,
+      "systolicBP": 129.0,
+      "diastolicBP": 80.0,
+      "spo2": 96.6,
+      "temperature": 36.9,
+      "fetalHeartRate": 148.0
+    },
+    {
+      "timestamp": "2026-09-17T22:48:00+05:30",
+      "maternalHeartRate": 87.0,
+      "systolicBP": 127.0,
+      "diastolicBP": 81.0,
+      "spo2": 96.7,
+      "temperature": 37.1,
+      "fetalHeartRate": 146.0
+    },
+    {
+      "timestamp": "2026-09-18T00:00:00+05:30",
+      "maternalHeartRate": 87.0,
+      "systolicBP": 132.0,
+      "diastolicBP": 82.0,
+      "spo2": 96.7,
+      "temperature": 37.1,
+      "fetalHeartRate": 151.0
+    },
+    {
+      "timestamp": "2026-09-18T01:12:00+05:30",
+      "maternalHeartRate": 89.0,
+      "systolicBP": 127.0,
+      "diastolicBP": 82.0,
+      "spo2": 97.7,
+      "temperature": 36.9,
+      "fetalHeartRate": 147.0
+    },
+    {
+      "timestamp": "2026-09-18T02:24:00+05:30",
+      "maternalHeartRate": 89.0,
+      "systolicBP": 134.0,
+      "diastolicBP": 82.0,
+      "spo2": 97.3,
+      "temperature": 37.0,
+      "fetalHeartRate": 150.0
+    },
+    {
+      "timestamp": "2026-09-18T03:36:00+05:30",
+      "maternalHeartRate": 85.0,
+      "systolicBP": 130.0,
+      "diastolicBP": 86.0,
+      "spo2": 96.8,
+      "temperature": 36.9,
+      "fetalHeartRate": 151.0
+    },
+    {
+      "timestamp": "2026-09-18T04:48:00+05:30",
+      "maternalHeartRate": 87.0,
+      "systolicBP": 132.0,
+      "diastolicBP": 85.0,
+      "spo2": 97.1,
+      "temperature": 37.1,
+      "fetalHeartRate": 151.0
+    },
+    {
+      "timestamp": "2026-09-18T06:00:00+05:30",
+      "maternalHeartRate": 88.0,
+      "systolicBP": 131.0,
+      "diastolicBP": 83.0,
+      "spo2": 97.3,
+      "temperature": 37.1,
+      "fetalHeartRate": 155.0
+    },
+    {
+      "timestamp": "2026-09-18T07:12:00+05:30",
+      "maternalHeartRate": 87.0,
+      "systolicBP": 133.0,
+      "diastolicBP": 86.0,
+      "spo2": 96.6,
+      "temperature": 37.0,
+      "fetalHeartRate": 155.0
+    },
+    {
+      "timestamp": "2026-09-18T08:24:00+05:30",
+      "maternalHeartRate": 89.0,
+      "systolicBP": 130.0,
+      "diastolicBP": 89.0,
+      "spo2": 97.0,
+      "temperature": 37.0,
+      "fetalHeartRate": 154.0
+    },
+    {
+      "timestamp": "2026-09-18T09:36:00+05:30",
+      "maternalHeartRate": 91.0,
+      "systolicBP": 136.0,
+      "diastolicBP": 86.0,
+      "spo2": 97.5,
+      "temperature": 37.0,
+      "fetalHeartRate": 158.0
+    },
+    {
+      "timestamp": "2026-09-18T10:48:00+05:30",
+      "maternalHeartRate": 89.0,
+      "systolicBP": 136.0,
+      "diastolicBP": 84.0,
+      "spo2": 97.4,
+      "temperature": 37.0,
+      "fetalHeartRate": 155.0
+    },
+    {
+      "timestamp": "2026-09-18T12:00:00+05:30",
+      "maternalHeartRate": 90.0,
+      "systolicBP": 132.0,
+      "diastolicBP": 90.0,
+      "spo2": 97.3,
+      "temperature": 37.0,
+      "fetalHeartRate": 159.0
+    }
+  ],
+  "P0012": [
+    {
+      "timestamp": "2026-09-16T14:06:00+05:30",
+      "maternalHeartRate": 80.0,
+      "systolicBP": 114.0,
+      "diastolicBP": 70.0,
+      "spo2": 98.6,
+      "temperature": 36.5,
+      "fetalHeartRate": 148.0
+    },
+    {
+      "timestamp": "2026-09-16T15:48:00+05:30",
+      "maternalHeartRate": 78.0,
+      "systolicBP": 116.0,
+      "diastolicBP": 73.0,
+      "spo2": 98.8,
+      "temperature": 36.6,
+      "fetalHeartRate": 149.0
+    },
+    {
+      "timestamp": "2026-09-16T17:30:00+05:30",
+      "maternalHeartRate": 79.0,
+      "systolicBP": 115.0,
+      "diastolicBP": 71.0,
+      "spo2": 98.4,
+      "temperature": 36.5,
+      "fetalHeartRate": 153.0
+    },
+    {
+      "timestamp": "2026-09-16T19:12:00+05:30",
+      "maternalHeartRate": 77.0,
+      "systolicBP": 120.0,
+      "diastolicBP": 72.0,
+      "spo2": 98.7,
+      "temperature": 36.5,
+      "fetalHeartRate": 147.0
+    },
+    {
+      "timestamp": "2026-09-16T20:54:00+05:30",
+      "maternalHeartRate": 80.0,
+      "systolicBP": 117.0,
+      "diastolicBP": 74.0,
+      "spo2": 99.3,
+      "temperature": 36.4,
+      "fetalHeartRate": 147.0
+    },
+    {
+      "timestamp": "2026-09-16T22:36:00+05:30",
+      "maternalHeartRate": 82.0,
+      "systolicBP": 114.0,
+      "diastolicBP": 76.0,
+      "spo2": 99.2,
+      "temperature": 36.6,
+      "fetalHeartRate": 145.0
+    },
+    {
+      "timestamp": "2026-09-17T00:18:00+05:30",
+      "maternalHeartRate": 84.0,
+      "systolicBP": 115.0,
+      "diastolicBP": 72.0,
+      "spo2": 98.5,
+      "temperature": 36.5,
+      "fetalHeartRate": 151.0
+    },
+    {
+      "timestamp": "2026-09-17T02:00:00+05:30",
+      "maternalHeartRate": 79.0,
+      "systolicBP": 116.0,
+      "diastolicBP": 72.0,
+      "spo2": 99.2,
+      "temperature": 36.5,
+      "fetalHeartRate": 142.0
+    },
+    {
+      "timestamp": "2026-09-17T03:42:00+05:30",
+      "maternalHeartRate": 82.0,
+      "systolicBP": 113.0,
+      "diastolicBP": 74.0,
+      "spo2": 98.8,
+      "temperature": 36.6,
+      "fetalHeartRate": 143.0
+    },
+    {
+      "timestamp": "2026-09-17T05:24:00+05:30",
+      "maternalHeartRate": 82.0,
+      "systolicBP": 117.0,
+      "diastolicBP": 70.0,
+      "spo2": 98.4,
+      "temperature": 36.6,
+      "fetalHeartRate": 141.0
+    },
+    {
+      "timestamp": "2026-09-17T07:06:00+05:30",
+      "maternalHeartRate": 79.0,
+      "systolicBP": 114.0,
+      "diastolicBP": 71.0,
+      "spo2": 99.6,
+      "temperature": 36.5,
+      "fetalHeartRate": 143.0
+    },
+    {
+      "timestamp": "2026-09-17T08:48:00+05:30",
+      "maternalHeartRate": 80.0,
+      "systolicBP": 114.0,
+      "diastolicBP": 72.0,
+      "spo2": 98.8,
+      "temperature": 36.6,
+      "fetalHeartRate": 142.0
+    },
+    {
+      "timestamp": "2026-09-17T10:30:00+05:30",
+      "maternalHeartRate": 81.0,
+      "systolicBP": 113.0,
+      "diastolicBP": 70.0,
+      "spo2": 99.2,
+      "temperature": 36.4,
+      "fetalHeartRate": 137.0
+    },
+    {
+      "timestamp": "2026-09-17T12:12:00+05:30",
+      "maternalHeartRate": 76.0,
+      "systolicBP": 109.0,
+      "diastolicBP": 68.0,
+      "spo2": 99.3,
+      "temperature": 36.5,
+      "fetalHeartRate": 138.0
+    },
+    {
+      "timestamp": "2026-09-17T13:54:00+05:30",
+      "maternalHeartRate": 75.0,
+      "systolicBP": 109.0,
+      "diastolicBP": 68.0,
+      "spo2": 99.2,
+      "temperature": 36.6,
+      "fetalHeartRate": 139.0
+    },
+    {
+      "timestamp": "2026-09-17T15:36:00+05:30",
+      "maternalHeartRate": 79.0,
+      "systolicBP": 109.0,
+      "diastolicBP": 69.0,
+      "spo2": 98.4,
+      "temperature": 36.4,
+      "fetalHeartRate": 137.0
+    },
+    {
+      "timestamp": "2026-09-17T17:18:00+05:30",
+      "maternalHeartRate": 73.0,
+      "systolicBP": 107.0,
+      "diastolicBP": 66.0,
+      "spo2": 98.4,
+      "temperature": 36.6,
+      "fetalHeartRate": 141.0
+    },
+    {
+      "timestamp": "2026-09-17T19:00:00+05:30",
+      "maternalHeartRate": 75.0,
+      "systolicBP": 107.0,
+      "diastolicBP": 69.0,
+      "spo2": 98.9,
+      "temperature": 36.6,
+      "fetalHeartRate": 137.0
+    },
+    {
+      "timestamp": "2026-09-17T20:42:00+05:30",
+      "maternalHeartRate": 71.0,
+      "systolicBP": 103.0,
+      "diastolicBP": 70.0,
+      "spo2": 98.7,
+      "temperature": 36.4,
+      "fetalHeartRate": 138.0
+    },
+    {
+      "timestamp": "2026-09-17T22:24:00+05:30",
+      "maternalHeartRate": 71.0,
+      "systolicBP": 107.0,
+      "diastolicBP": 69.0,
+      "spo2": 99.4,
+      "temperature": 36.5,
+      "fetalHeartRate": 135.0
+    },
+    {
+      "timestamp": "2026-09-18T00:06:00+05:30",
+      "maternalHeartRate": 71.0,
+      "systolicBP": 109.0,
+      "diastolicBP": 70.0,
+      "spo2": 98.8,
+      "temperature": 36.6,
+      "fetalHeartRate": 135.0
+    },
+    {
+      "timestamp": "2026-09-18T01:48:00+05:30",
+      "maternalHeartRate": 74.0,
+      "systolicBP": 108.0,
+      "diastolicBP": 71.0,
+      "spo2": 98.4,
+      "temperature": 36.6,
+      "fetalHeartRate": 142.0
+    },
+    {
+      "timestamp": "2026-09-18T03:30:00+05:30",
+      "maternalHeartRate": 72.0,
+      "systolicBP": 112.0,
+      "diastolicBP": 68.0,
+      "spo2": 98.8,
+      "temperature": 36.6,
+      "fetalHeartRate": 140.0
+    },
+    {
+      "timestamp": "2026-09-18T05:12:00+05:30",
+      "maternalHeartRate": 76.0,
+      "systolicBP": 111.0,
+      "diastolicBP": 68.0,
+      "spo2": 99.5,
+      "temperature": 36.5,
+      "fetalHeartRate": 141.0
+    },
+    {
+      "timestamp": "2026-09-18T06:54:00+05:30",
+      "maternalHeartRate": 75.0,
+      "systolicBP": 111.0,
+      "diastolicBP": 68.0,
+      "spo2": 98.4,
+      "temperature": 36.4,
+      "fetalHeartRate": 141.0
+    },
+    {
+      "timestamp": "2026-09-18T08:36:00+05:30",
+      "maternalHeartRate": 72.0,
+      "systolicBP": 110.0,
+      "diastolicBP": 69.0,
+      "spo2": 99.1,
+      "temperature": 36.4,
+      "fetalHeartRate": 147.0
+    },
+    {
+      "timestamp": "2026-09-18T10:18:00+05:30",
+      "maternalHeartRate": 74.0,
+      "systolicBP": 110.0,
+      "diastolicBP": 73.0,
+      "spo2": 99.8,
+      "temperature": 36.6,
+      "fetalHeartRate": 143.0
+    },
+    {
+      "timestamp": "2026-09-18T12:00:00+05:30",
+      "maternalHeartRate": 79.0,
+      "systolicBP": 116.0,
+      "diastolicBP": 74.0,
+      "spo2": 99.8,
+      "temperature": 36.6,
+      "fetalHeartRate": 144.0
+    }
+  ]
+}

@@ -9,16 +9,17 @@
 
 ## Project Status
 
-🚧 **Work in Progress** — Stage 1 (Architecture Scaffolding) complete.
+🚧 **Work in Progress** — Stage 3 (Data Foundation) complete.
 
-| Stage | Description                        | Status      |
-|-------|------------------------------------|-------------|
-| 1     | Project scaffolding & design system | ✅ Complete |
-| 2     | Application shell & navigation      | ⬜ Planned  |
-| 3     | Patient data & UI components        | ⬜ Planned  |
-| 4     | Live monitoring & charts            | ⬜ Planned  |
-| 5     | Reports & export                    | ⬜ Planned  |
-| 6     | Firebase backend integration        | ⬜ Planned  |
+| Stage | Description                              | Status      |
+|-------|------------------------------------------|-------------|
+| 1     | Project scaffolding & design system       | ✅ Complete |
+| 2     | Demo authentication & login page          | ✅ Complete |
+| 3     | Synthetic data & data access layer        | ✅ Complete |
+| 4     | Application shell, navigation & dashboard | ⬜ Planned  |
+| 5     | Patient management & monitoring UI        | ⬜ Planned  |
+| 6     | Reports, alerts & export                  | ⬜ Planned  |
+| 7     | Firebase backend integration              | ⬜ Planned  |
 
 ---
 
@@ -59,6 +60,26 @@ neocare-doctor-dashboard/
 ├── README.md
 └── LICENSE
 ```
+
+---
+
+## Data Layer
+
+The application currently uses **synthetic local JSON files** as its data source:
+
+| File | Contents |
+|------|----------|
+| `data/patients.json` | 12 synthetic patient records |
+| `data/sensor-data.json` | 416 algorithmically generated sensor readings |
+| `data/alerts.json` | 20 synthetic alerts (mixed severity/status) |
+| `data/doctor.json` | 1 synthetic doctor profile |
+
+All data access is centralised in **`js/data/dataService.js`** (`NeoCareData` module).
+Page controllers call `NeoCareData.getPatients()`, `getAlerts()`, etc.
+and never access `data/*.json` directly.
+
+This abstraction means **Firebase / Firestore** can be integrated in a future
+stage by replacing only `dataService.js` — no page controller changes required.
 
 ---
 
