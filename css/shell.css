@@ -1,0 +1,736 @@
+/*
+ * NEOCARE Doctor Dashboard — Application Shell Styles
+ * ─────────────────────────────────────────────────────
+ * Stage 4: Sidebar, topbar, and main layout for all
+ * authenticated pages.
+ *
+ * Responsive states:
+ *   Desktop  (>1024px): fixed sidebar 248px + main
+ *   Tablet   (768–1024px): collapsed icon sidebar 68px + main
+ *   Mobile   (<768px): off-canvas drawer, hidden by default
+ */
+
+/* ═══════════════════════════════════════════
+   1. SHELL ROOT LAYOUT
+   ═══════════════════════════════════════════ */
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-app);
+  position: relative;
+}
+
+/* ═══════════════════════════════════════════
+   2. SIDEBAR
+   ═══════════════════════════════════════════ */
+
+.sidebar {
+  width: 248px;
+  flex-shrink: 0;
+  background-color: var(--bg-sidebar);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: var(--z-sidebar);
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: transform var(--transition-base), width var(--transition-base);
+  /* Scrollbar styling for dark sidebar */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.1) transparent;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.1);
+  border-radius: 2px;
+}
+
+/* ── Sidebar: Branding ─────────────────────── */
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-5) var(--space-5);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  min-height: 64px;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.sidebar-brand:hover {
+  text-decoration: none;
+}
+
+.sidebar-brand-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-md);
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.sidebar-brand-text {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sidebar-brand-name {
+  font-size: var(--text-base);
+  font-weight: var(--font-bold);
+  color: var(--text-inverse);
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.sidebar-brand-sub {
+  font-size: var(--text-xs);
+  color: rgba(249,250,251,0.45);
+  white-space: nowrap;
+  margin-top: 1px;
+}
+
+/* ── Sidebar: Navigation ───────────────────── */
+
+.sidebar-nav {
+  flex: 1;
+  padding: var(--space-4) 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nav-section-label {
+  font-size: 10px;
+  font-weight: var(--font-semibold);
+  color: rgba(249,250,251,0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: var(--space-3) var(--space-5) var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 10px var(--space-5);
+  margin: 0 var(--space-3);
+  border-radius: var(--radius-md);
+  color: rgba(249,250,251,0.6);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast);
+  white-space: nowrap;
+  position: relative;
+}
+
+.nav-item:hover {
+  background-color: rgba(255,255,255,0.06);
+  color: var(--text-inverse);
+  text-decoration: none;
+}
+
+.nav-item.active {
+  background-color: rgba(47,111,237,0.18);
+  color: var(--text-inverse);
+}
+
+.nav-item.active::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 20px;
+  background-color: var(--color-primary);
+  border-radius: 0 3px 3px 0;
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.nav-label {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Alert badge on nav item */
+.nav-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  background-color: var(--color-critical);
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: var(--font-bold);
+  border-radius: var(--radius-pill);
+  flex-shrink: 0;
+}
+
+.nav-badge:empty,
+.nav-badge[data-count="0"] {
+  display: none;
+}
+
+/* ── Sidebar: Doctor profile / footer ──────── */
+
+.sidebar-footer {
+  padding: var(--space-4) var(--space-3);
+  border-top: 1px solid rgba(255,255,255,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+
+.sidebar-doctor {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: background-color var(--transition-fast);
+}
+
+.sidebar-doctor:hover {
+  background-color: rgba(255,255,255,0.06);
+  text-decoration: none;
+}
+
+.doctor-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: var(--text-sm);
+  font-weight: var(--font-bold);
+  flex-shrink: 0;
+  letter-spacing: 0.02em;
+}
+
+.doctor-info {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.doctor-name {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--text-inverse);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.doctor-role {
+  font-size: var(--text-xs);
+  color: rgba(249,250,251,0.45);
+}
+
+.sidebar-logout-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 9px var(--space-3);
+  border-radius: var(--radius-md);
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(249,250,251,0.5);
+  font-size: var(--text-xs);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  width: 100%;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.sidebar-logout-btn:hover {
+  background-color: rgba(220,38,38,0.12);
+  border-color: rgba(220,38,38,0.3);
+  color: #fca5a5;
+}
+
+.sidebar-logout-btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* ═══════════════════════════════════════════
+   3. MOBILE OVERLAY (backdrop)
+   ═══════════════════════════════════════════ */
+
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(16,24,40,0.55);
+  z-index: calc(var(--z-sidebar) - 1);
+  transition: opacity var(--transition-base);
+}
+
+/* ═══════════════════════════════════════════
+   4. MAIN AREA
+   ═══════════════════════════════════════════ */
+
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 100vh;
+  margin-left: 248px;
+  transition: margin-left var(--transition-base);
+}
+
+/* ═══════════════════════════════════════════
+   5. TOPBAR
+   ═══════════════════════════════════════════ */
+
+.topbar {
+  height: 64px;
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-6);
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+  flex-shrink: 0;
+  gap: var(--space-4);
+}
+
+/* ── Topbar: Left ──────────────────────────── */
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.topbar-menu-btn {
+  display: none; /* hidden on desktop, shown on mobile */
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.topbar-menu-btn:hover {
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+}
+
+.topbar-menu-btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.topbar-page-title {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Mobile brand in topbar (logo + wordmark) */
+.topbar-brand {
+  display: none;
+  align-items: center;
+  gap: var(--space-2);
+  text-decoration: none;
+}
+
+.topbar-brand:hover { text-decoration: none; }
+
+.topbar-brand-icon {
+  width: 28px;
+  height: 28px;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.topbar-brand-name {
+  font-size: var(--text-base);
+  font-weight: var(--font-bold);
+  color: var(--text-primary);
+  letter-spacing: 0.05em;
+}
+
+/* ── Topbar: Right ─────────────────────────── */
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-shrink: 0;
+}
+
+/* Notification button */
+.topbar-notif-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+  text-decoration: none;
+}
+
+.topbar-notif-btn:hover {
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+}
+
+.topbar-notif-btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-md);
+}
+
+.notif-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  background-color: var(--color-critical);
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: var(--font-bold);
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.notif-badge[data-count="0"],
+.notif-badge:empty {
+  display: none;
+}
+
+/* Doctor mini-profile in topbar */
+.topbar-doctor {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-md);
+  cursor: default;
+  user-select: none;
+}
+
+.topbar-doctor-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: var(--text-xs);
+  font-weight: var(--font-bold);
+  flex-shrink: 0;
+  letter-spacing: 0.02em;
+}
+
+.topbar-doctor-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar-doctor-name {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.topbar-doctor-role {
+  font-size: 11px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+/* ═══════════════════════════════════════════
+   6. PAGE CONTENT
+   ═══════════════════════════════════════════ */
+
+.page-content {
+  flex: 1;
+  padding: var(--space-8) var(--space-8);
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Content placeholder (Stage 4 — filled in later stages) */
+.page-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  gap: var(--space-4);
+  color: var(--text-secondary);
+  text-align: center;
+  padding: var(--space-10);
+}
+
+.page-placeholder-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-app);
+  border-radius: var(--radius-card);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-2);
+}
+
+.page-placeholder-title {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+}
+
+.page-placeholder-sub {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  max-width: 320px;
+  line-height: var(--leading-relaxed);
+}
+
+/* ═══════════════════════════════════════════
+   7. TABLET LAYOUT  (768px – 1024px)
+   ═══════════════════════════════════════════ */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sidebar {
+    width: 68px;
+  }
+
+  .app-main {
+    margin-left: 68px;
+  }
+
+  .sidebar-brand-text,
+  .nav-label,
+  .nav-badge,
+  .sidebar-brand-sub,
+  .doctor-info,
+  .sidebar-logout-btn span {
+    display: none;
+  }
+
+  .sidebar-brand {
+    justify-content: center;
+    padding: var(--space-4) var(--space-3);
+  }
+
+  .nav-item {
+    justify-content: center;
+    padding: 11px;
+    margin: 0 var(--space-2);
+    position: relative;
+  }
+
+  /* Tooltip on hover for collapsed nav items */
+  .nav-item[data-label]::after {
+    content: attr(data-label);
+    position: absolute;
+    left: calc(100% + 12px);
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--bg-sidebar);
+    color: var(--text-inverse);
+    font-size: var(--text-xs);
+    font-weight: var(--font-medium);
+    padding: 6px 10px;
+    border-radius: var(--radius-sm);
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+    z-index: 10;
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .nav-item[data-label]:hover::after {
+    opacity: 1;
+  }
+
+  .nav-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .nav-section-label {
+    display: none;
+  }
+
+  .sidebar-footer {
+    padding: var(--space-3) var(--space-2);
+    align-items: center;
+  }
+
+  .sidebar-doctor {
+    justify-content: center;
+    padding: var(--space-2);
+  }
+
+  .sidebar-logout-btn {
+    padding: 9px;
+    justify-content: center;
+    border-radius: var(--radius-md);
+  }
+
+  .nav-item.active::before {
+    left: -8px;
+  }
+
+  .page-content {
+    padding: var(--space-6) var(--space-6);
+  }
+
+  /* Show page title in topbar on tablet */
+  .topbar-page-title {
+    display: block;
+  }
+}
+
+/* ═══════════════════════════════════════════
+   8. MOBILE LAYOUT  (<768px)
+   ═══════════════════════════════════════════ */
+
+@media (max-width: 767px) {
+  .sidebar {
+    transform: translateX(-100%);
+    width: 280px;
+    /* Override fixed positioning to allow off-canvas */
+  }
+
+  .sidebar.is-open {
+    transform: translateX(0);
+  }
+
+  .sidebar-overlay {
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition-base);
+  }
+
+  .sidebar-overlay.is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .app-main {
+    margin-left: 0;
+  }
+
+  .topbar-menu-btn {
+    display: flex;
+  }
+
+  .topbar-brand {
+    display: flex;
+  }
+
+  /* Hide the topbar page title on mobile — brand shows instead */
+  .topbar-page-title {
+    display: none;
+  }
+
+  /* Hide topbar doctor info text on small phones */
+  .topbar-doctor-info {
+    display: none;
+  }
+
+  .page-content {
+    padding: var(--space-5) var(--space-4);
+  }
+}
+
+/* ═══════════════════════════════════════════
+   9. DESKTOP-ONLY OVERRIDES  (>1024px)
+   ═══════════════════════════════════════════ */
+
+@media (min-width: 1025px) {
+  /* Ensure sidebar elements are all visible */
+  .sidebar-brand-text,
+  .nav-label,
+  .doctor-info {
+    display: flex;
+  }
+
+  .topbar-menu-btn {
+    display: none;
+  }
+}

@@ -9,15 +9,15 @@
 
 ## Project Status
 
-🚧 **Work in Progress** — Stage 3 (Data Foundation) complete.
+🚧 **Work in Progress** — Stage 4 (App Shell & Navigation) complete.
 
 | Stage | Description                              | Status      |
 |-------|------------------------------------------|-------------|
 | 1     | Project scaffolding & design system       | ✅ Complete |
 | 2     | Demo authentication & login page          | ✅ Complete |
 | 3     | Synthetic data & data access layer        | ✅ Complete |
-| 4     | Application shell, navigation & dashboard | ⬜ Planned  |
-| 5     | Patient management & monitoring UI        | ⬜ Planned  |
+| 4     | App shell, sidebar & navigation           | ✅ Complete |
+| 5     | Dashboard KPIs, patient list & charts     | ⬜ Planned  |
 | 6     | Reports, alerts & export                  | ⬜ Planned  |
 | 7     | Firebase backend integration              | ⬜ Planned  |
 
