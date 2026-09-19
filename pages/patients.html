@@ -3,26 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="NEOCARE Patients — Manage and monitor patient records." />
+    <meta name="description" content="NEOCARE Patients — Manage and monitor assigned patient records." />
     <title>NEOCARE | Patients</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/shell.css" />
     <link rel="stylesheet" href="../css/patients.css" />
   </head>
   <body>
 
-    <!-- Mobile backdrop -->
     <div class="sidebar-overlay" id="sidebar-overlay" aria-hidden="true"></div>
 
     <div class="app-shell">
 
-      <!-- ======== SIDEBAR ======== -->
-      <aside
-        class="sidebar"
-        id="app-sidebar"
-        aria-label="Main navigation"
-      >
-        <!-- Branding -->
+      <!-- ════ SIDEBAR ════ -->
+      <aside class="sidebar" id="app-sidebar" aria-label="Main navigation">
         <a class="sidebar-brand" href="dashboard.html" aria-label="NEOCARE home">
           <span class="sidebar-brand-icon" aria-hidden="true">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
@@ -34,70 +31,47 @@
             <span class="sidebar-brand-sub">Doctor Dashboard</span>
           </span>
         </a>
-
-        <!-- Navigation -->
         <nav class="sidebar-nav" aria-label="Application navigation">
           <span class="nav-section-label">Main</span>
-
           <a class="nav-item" href="dashboard.html" data-page="dashboard" data-label="Dashboard">
             <span class="nav-icon" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-                   stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                   stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
             </span>
             <span class="nav-label">Dashboard</span>
           </a>
-
           <a class="nav-item" href="patients.html" data-page="patients" data-label="Patients">
             <span class="nav-icon" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-                   stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                   stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             </span>
             <span class="nav-label">Patients</span>
           </a>
-
           <a class="nav-item" href="monitoring.html" data-page="monitoring" data-label="Monitoring">
             <span class="nav-icon" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-                   stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                   stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
             </span>
             <span class="nav-label">Monitoring</span>
           </a>
-
           <a class="nav-item" href="alerts.html" data-page="alerts" data-label="Alerts">
             <span class="nav-icon" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-                   stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                   stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
             </span>
             <span class="nav-label">Alerts</span>
             <span class="nav-badge" data-for="alerts" aria-label="New alerts"></span>
           </a>
-
           <span class="nav-section-label">Reports &amp; Profile</span>
-
           <a class="nav-item" href="reports.html" data-page="reports" data-label="Reports">
             <span class="nav-icon" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-                   stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                   stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
             </span>
             <span class="nav-label">Reports</span>
           </a>
-
           <a class="nav-item" href="profile.html" data-page="profile" data-label="Profile">
             <span class="nav-icon" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-                   stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                   stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
             </span>
             <span class="nav-label">Profile</span>
           </a>
         </nav>
-
-        <!-- Doctor profile + logout -->
         <div class="sidebar-footer">
           <a class="sidebar-doctor" href="profile.html" aria-label="View profile">
             <div class="doctor-avatar" aria-hidden="true">DS</div>
@@ -107,63 +81,37 @@
             </div>
           </a>
           <button class="sidebar-logout-btn" type="button" aria-label="Sign out">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-                 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                 stroke-linejoin="round" aria-hidden="true">
-              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
-              <polyline points="16 17 21 12 16 7"/>
-              <line x1="21" y1="12" x2="9" y2="12"/>
-            </svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
             <span>Sign Out</span>
           </button>
         </div>
       </aside>
-      <!-- ======== /SIDEBAR ======== -->
+      <!-- ════ /SIDEBAR ════ -->
 
-      <!-- ======== MAIN ======== -->
+      <!-- ════ MAIN ════ -->
       <div class="app-main">
 
         <!-- Topbar -->
         <header class="topbar" role="banner">
           <div class="topbar-left">
-            <button
-              class="topbar-menu-btn"
-              id="topbar-menu-btn"
-              type="button"
-              aria-label="Open navigation menu"
-              aria-expanded="false"
-              aria-controls="app-sidebar"
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                   stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                   stroke-linejoin="round" aria-hidden="true">
-                <line x1="3" y1="6" x2="21" y2="6"/>
-                <line x1="3" y1="12" x2="21" y2="12"/>
-                <line x1="3" y1="18" x2="21" y2="18"/>
+            <button class="topbar-menu-btn" id="topbar-menu-btn" type="button"
+                    aria-label="Open navigation menu" aria-expanded="false" aria-controls="app-sidebar">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
               </svg>
             </button>
             <a class="topbar-brand" href="dashboard.html" aria-label="NEOCARE home">
               <span class="topbar-brand-icon" aria-hidden="true">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-                     stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                     stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
               </span>
               <span class="topbar-brand-name">NEOCARE</span>
             </a>
             <h1 class="topbar-page-title">Patients</h1>
           </div>
           <div class="topbar-right">
-            <button
-              class="topbar-notif-btn"
-              type="button"
-              aria-label="View alerts"
-              title="Alerts"
-            >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-                   stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                   stroke-linejoin="round" aria-hidden="true">
-                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
-                <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+            <button class="topbar-notif-btn" type="button" aria-label="View alerts" title="Alerts">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>
               </svg>
               <span class="notif-badge" aria-live="polite"></span>
             </button>
@@ -177,22 +125,147 @@
           </div>
         </header>
 
-        <!-- Page content -->
+        <!-- Page Content -->
         <main class="page-content" id="main-content">
-          <!-- Stage 5+: Patients content will be implemented here -->
-          <div class="page-placeholder">
-            <div class="page-placeholder-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+
+          <!-- Header -->
+          <div class="page-header">
+            <div class="page-header-left">
+              <h2 class="page-title">Patients</h2>
+              <p class="page-subtitle">Monitor patient status, pregnancy progress, and recent health readings.</p>
+              <span class="demo-badge" role="note">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                Demo environment &bull; All patient information is synthetic
+              </span>
             </div>
-            <p class="page-placeholder-title">Patients</p>
-            <p class="page-placeholder-sub">Patient list, search, and risk filters will be implemented in Stage 5.</p>
           </div>
+
+          <!-- Summary Cards -->
+          <section class="summary-row" aria-label="Patient population summary">
+            <div class="summary-card">
+              <div class="summary-icon summary-icon--total" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div class="summary-body">
+                <div class="summary-value is-loading" id="sum-total" aria-live="polite"></div>
+                <div class="summary-label">Total Patients</div>
+              </div>
+            </div>
+            <div class="summary-card">
+              <div class="summary-icon summary-icon--active" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <div class="summary-body">
+                <div class="summary-value is-loading" id="sum-active" aria-live="polite"></div>
+                <div class="summary-label">Active Monitoring</div>
+              </div>
+            </div>
+            <div class="summary-card">
+              <div class="summary-icon summary-icon--highrisk" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              </div>
+              <div class="summary-body">
+                <div class="summary-value is-loading" id="sum-highrisk" aria-live="polite"></div>
+                <div class="summary-label">High Risk</div>
+              </div>
+            </div>
+            <div class="summary-card">
+              <div class="summary-icon summary-icon--inactive" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+              </div>
+              <div class="summary-body">
+                <div class="summary-value is-loading" id="sum-inactive" aria-live="polite"></div>
+                <div class="summary-label">Inactive</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Search + Filters -->
+          <div class="filter-bar" role="search" aria-label="Patient search and filters">
+            <div class="search-wrap">
+              <span class="search-icon" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </span>
+              <input
+                class="search-input"
+                id="patient-search"
+                type="search"
+                placeholder="Search by name or patient ID"
+                aria-label="Search patients by name or patient ID"
+                autocomplete="off"
+              />
+            </div>
+            <select class="filter-select" id="filter-status" aria-label="Filter by monitoring status">
+              <option value="">All Monitoring</option>
+              <option value="Active">Active</option>
+              <option value="Monitoring">Monitoring</option>
+              <option value="Inactive">Inactive</option>
+            </select>
+            <select class="filter-select" id="filter-risk" aria-label="Filter by risk status">
+              <option value="">All Risk Levels</option>
+              <option value="Low">Low</option>
+              <option value="Moderate">Moderate</option>
+              <option value="High">High</option>
+            </select>
+            <button class="clear-filters-btn" id="clear-filters-btn" type="button" aria-label="Clear all filters">
+              Clear Filters
+            </button>
+          </div>
+
+          <!-- Patient Table Card -->
+          <div class="patients-card">
+
+            <!-- Results meta -->
+            <div class="results-meta" id="results-meta" aria-live="polite">
+              Loading…
+            </div>
+
+            <!-- Desktop Table -->
+            <div class="patients-table-wrap">
+              <table class="patients-table" aria-label="Patient list">
+                <thead>
+                  <tr>
+                    <th scope="col">Patient</th>
+                    <th scope="col">Pregnancy</th>
+                    <th scope="col">Expected Delivery</th>
+                    <th scope="col">Monitoring</th>
+                    <th scope="col">Risk</th>
+                    <th scope="col">Last Updated</th>
+                    <th scope="col"><span class="sr-only">Actions</span></th>
+                  </tr>
+                </thead>
+                <tbody id="patients-tbody" aria-live="polite">
+                  <!-- Populated by patients.js -->
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Mobile card stack -->
+            <div id="patients-mobile" class="pt-cards" style="padding: var(--space-4);" aria-live="polite">
+              <!-- Populated by patients.js on mobile -->
+            </div>
+
+            <!-- Empty / Error state panel -->
+            <div id="state-panel" class="state-panel" hidden>
+              <div class="state-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div id="state-msg">
+                <p class="state-title">No patients found</p>
+                <p class="state-sub">Try adjusting your search or filters.</p>
+              </div>
+              <button id="state-clear" class="action-btn" type="button" hidden>Clear Filters</button>
+              <button id="state-retry" class="action-btn" type="button" hidden>Retry</button>
+            </div>
+
+          </div><!-- /patients-card -->
+
         </main>
 
-      </div>
-      <!-- ======== /MAIN ======== -->
+      </div><!-- /app-main -->
+    </div><!-- /app-shell -->
 
-    </div><!-- /.app-shell -->
+    <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}</style>
 
     <script src="../js/utils.js"></script>
     <script src="../js/auth.js"></script>
