@@ -7,6 +7,7 @@
     <title>NEOCARE | Alerts</title>
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/shell.css" />
+    <link rel="stylesheet" href="../css/alerts.css" />
   </head>
   <body>
 
@@ -178,15 +179,143 @@
 
         <!-- Page content -->
         <main class="page-content" id="main-content">
-          <!-- Stage 5+: Alerts content will be implemented here -->
-          <div class="page-placeholder">
-            <div class="page-placeholder-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          <div class="alerts-page-header">
+            <div class="alerts-page-header-left">
+              <h1 class="alerts-page-title">Alerts</h1>
+              <p class="alerts-page-sub">Review and manage patient monitoring alerts</p>
+              <div class="alerts-synthetic-disclosure">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                Data shown is synthetic and intended for demonstration purposes only. Not for clinical decision-making.
+              </div>
             </div>
-            <p class="page-placeholder-title">Alerts</p>
-            <p class="page-placeholder-sub">Alert list, acknowledgement, and filters will be implemented in Stage 5.</p>
+            <div class="alerts-header-actions">
+              <button class="alerts-refresh-btn" id="btn-refresh" type="button" aria-label="Refresh alerts">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+                Refresh
+              </button>
+            </div>
           </div>
+
+          <!-- KPI Summary Cards -->
+          <div class="alerts-summary-row">
+            <div class="alerts-summary-card">
+              <div class="alerts-summary-icon alerts-summary-icon--total" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+              </div>
+              <div class="alerts-summary-body">
+                <span class="alerts-summary-value" id="kpi-total">0</span>
+                <span class="alerts-summary-label">Total Alerts</span>
+              </div>
+            </div>
+            <div class="alerts-summary-card">
+              <div class="alerts-summary-icon alerts-summary-icon--new" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <div class="alerts-summary-body">
+                <span class="alerts-summary-value" id="kpi-new">0</span>
+                <span class="alerts-summary-label">New Alerts</span>
+              </div>
+            </div>
+            <div class="alerts-summary-card">
+              <div class="alerts-summary-icon alerts-summary-icon--critical" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              </div>
+              <div class="alerts-summary-body">
+                <span class="alerts-summary-value" id="kpi-critical">0</span>
+                <span class="alerts-summary-label">Critical</span>
+              </div>
+            </div>
+            <div class="alerts-summary-card">
+              <div class="alerts-summary-icon alerts-summary-icon--acked" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <div class="alerts-summary-body">
+                <span class="alerts-summary-value" id="kpi-acked">0</span>
+                <span class="alerts-summary-label">Acknowledged</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Filter Toolbar -->
+          <div class="alerts-filter-bar">
+            <div class="alerts-search-wrap">
+              <span class="alerts-search-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </span>
+              <input type="text" id="filter-search" class="alerts-search-input" placeholder="Search alerts or patients..." aria-label="Search alerts" />
+            </div>
+            <select id="filter-severity" class="alerts-filter-select" aria-label="Filter by severity">
+              <option value="All">All Severities</option>
+              <option value="Critical">Critical</option>
+              <option value="Warning">Warning</option>
+              <option value="Info">Info</option>
+            </select>
+            <select id="filter-status" class="alerts-filter-select" aria-label="Filter by status">
+              <option value="All">All Statuses</option>
+              <option value="New">New</option>
+              <option value="Acknowledged">Acknowledged</option>
+            </select>
+            <select id="filter-patient" class="alerts-filter-select" aria-label="Filter by patient">
+              <option value="All">All Patients</option>
+              <!-- Populated dynamically -->
+            </select>
+            <button class="alerts-clear-btn" id="btn-clear-filters" type="button">Clear Filters</button>
+          </div>
+
+          <!-- Alerts Container -->
+          <div id="alerts-container">
+            <div class="alerts-card">
+              <div class="alerts-table-wrap">
+                <table class="alerts-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Severity</th>
+                      <th scope="col">Alert</th>
+                      <th scope="col">Patient</th>
+                      <th scope="col">Timestamp</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="alerts-table-body">
+                    <!-- Populated via JS -->
+                  </tbody>
+                </table>
+              </div>
+              <div class="alerts-mobile-cards" id="alerts-mobile-list">
+                <!-- Populated via JS -->
+              </div>
+            </div>
+          </div>
+
+          <div id="alerts-empty" class="alerts-empty-state" hidden>
+            <div class="alerts-empty-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <h3 class="alerts-empty-title">No alerts found</h3>
+            <p class="alerts-empty-sub">No alerts match your current filters.</p>
+          </div>
+
         </main>
+
+        <!-- Alert Detail Modal -->
+        <div class="alert-modal-overlay" id="alert-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+          <div class="alert-modal" role="document">
+            <div class="alert-modal-header">
+              <h2 class="alert-modal-title" id="modal-title">Alert Details</h2>
+              <button class="alert-modal-close" id="btn-close-modal" aria-label="Close modal">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </button>
+            </div>
+            <div class="alert-modal-body" id="modal-body-content">
+              <!-- Populated dynamically -->
+            </div>
+            <div class="alert-modal-footer">
+              <a href="#" class="alert-action-btn" id="modal-btn-patient">View Patient</a>
+              <button class="alert-action-btn alert-action-btn--primary" id="modal-btn-ack">Acknowledge Alert</button>
+            </div>
+          </div>
+        </div>
 
       </div>
       <!-- ======== /MAIN ======== -->
