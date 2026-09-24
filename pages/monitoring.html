@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/shell.css" />
     <link rel="stylesheet" href="../css/monitoring.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
   </head>
   <body>
 
@@ -179,14 +180,221 @@
 
         <!-- Page content -->
         <main class="page-content" id="main-content">
-          <!-- Stage 5+: Monitoring content will be implemented here -->
-          <div class="page-placeholder">
-            <div class="page-placeholder-icon" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+
+          <div class="mon-page-header">
+            <div class="mon-page-header-left">
+              <h1 class="mon-page-title">Live Monitoring</h1>
+              <p class="mon-page-sub">Monitor maternal and fetal vital trends</p>
             </div>
-            <p class="page-placeholder-title">Monitoring</p>
-            <p class="page-placeholder-sub">Live sensor charts and activity feeds will be implemented in Stage 5.</p>
           </div>
+
+          <div class="mon-demo-banner">
+            <div class="mon-demo-banner-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <div class="mon-demo-banner-text">
+              Data shown is synthetic and intended for demonstration purposes only. Not for clinical decision-making.
+            </div>
+          </div>
+
+          <div class="mon-selector-panel">
+            <div class="mon-selector-header">
+              <label class="mon-selector-label" for="mon-patient-select">Select Patient</label>
+            </div>
+            <div class="mon-select-wrap">
+              <select class="mon-patient-select" id="mon-patient-select" aria-label="Select a patient to monitor">
+                <option value="">— Loading patients —</option>
+              </select>
+            </div>
+            <div class="mon-patient-strip" id="mon-patient-strip" hidden>
+              <!-- JS Populated -->
+            </div>
+          </div>
+
+          <!-- Initial empty state -->
+          <div id="mon-init-state">
+            <div class="mon-state-panel">
+              <div class="mon-state-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <p class="mon-state-title">Select a patient</p>
+              <p class="mon-state-sub">Choose a patient from the dropdown above to view their monitoring data and start the simulation.</p>
+            </div>
+          </div>
+
+          <!-- Loading overlay -->
+          <div id="mon-loading-overlay" hidden>
+            <div class="mon-state-panel">
+              <div class="is-spinning" style="color: var(--color-primary);">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg>
+              </div>
+              <p class="mon-state-title">Loading monitoring data...</p>
+            </div>
+          </div>
+
+          <!-- Main monitoring content -->
+          <div id="mon-main-content" hidden>
+
+            <!-- Simulation controls -->
+            <div class="mon-controls-bar">
+              <div class="mon-controls-left">
+                <button class="mon-btn mon-btn--start" id="mon-btn-start" type="button" aria-label="Start Simulation">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  Start Simulation
+                </button>
+                <button class="mon-btn mon-btn--pause" id="mon-btn-pause" type="button" aria-label="Pause Simulation" disabled>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                  Pause
+                </button>
+                <button class="mon-btn mon-btn--reset" id="mon-btn-reset" type="button" aria-label="Reset Simulation">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                  Reset
+                </button>
+                <button class="mon-btn mon-btn--refresh" id="mon-btn-refresh" type="button" aria-label="Refresh Data">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/></svg>
+                  Refresh Data
+                </button>
+              </div>
+              <div class="mon-controls-right">
+                <div class="mon-sim-state mon-sim-state--paused" id="mon-sim-state">
+                  <span class="mon-sim-dot" id="mon-sim-dot"></span>
+                  <span id="mon-sim-label">PAUSED</span>
+                </div>
+                <div class="mon-timestamp" id="mon-timestamp" aria-live="polite"></div>
+              </div>
+            </div>
+
+            <!-- Vitals Grid -->
+            <div class="mon-vitals-grid">
+
+              <div class="mon-vital-card mon-vital-card--hr">
+                <div class="mon-vital-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"/></svg>
+                </div>
+                <div class="mon-vital-label">Maternal HR</div>
+                <div class="mon-vital-value" id="mon-vit-hr" aria-live="polite">—</div>
+                <div class="mon-vital-status">
+                  <span class="mon-vital-status-dot"></span> Monitoring
+                </div>
+              </div>
+
+              <div class="mon-vital-card mon-vital-card--bp">
+                <div class="mon-vital-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <div class="mon-vital-label">Blood Pressure</div>
+                <div class="mon-vital-value" id="mon-vit-bp" aria-live="polite">—</div>
+                <div class="mon-vital-status">
+                  <span class="mon-vital-status-dot"></span> Simulation
+                </div>
+              </div>
+
+              <div class="mon-vital-card mon-vital-card--spo2">
+                <div class="mon-vital-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+                </div>
+                <div class="mon-vital-label">SpO₂</div>
+                <div class="mon-vital-value" id="mon-vit-spo2" aria-live="polite">—</div>
+                <div class="mon-vital-status">
+                  <span class="mon-vital-status-dot"></span> Normal Range
+                </div>
+              </div>
+
+              <div class="mon-vital-card mon-vital-card--temp">
+                <div class="mon-vital-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg>
+                </div>
+                <div class="mon-vital-label">Temperature</div>
+                <div class="mon-vital-value" id="mon-vit-temp" aria-live="polite">—</div>
+                <div class="mon-vital-status">
+                  <span class="mon-vital-status-dot"></span> Normal Range
+                </div>
+              </div>
+
+              <div class="mon-vital-card mon-vital-card--fhr">
+                <div class="mon-vital-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                </div>
+                <div class="mon-vital-label">Fetal HR</div>
+                <div class="mon-vital-value" id="mon-vit-fhr" aria-live="polite">—</div>
+                <div class="mon-vital-status">
+                  <span class="mon-vital-status-dot"></span> Monitoring
+                </div>
+              </div>
+
+            </div>
+
+            <div class="mon-main-grid">
+              <!-- Trend Chart -->
+              <div class="mon-card">
+                <div class="mon-card-header">
+                  <h2 class="mon-card-title">Vital Trends</h2>
+                  <div class="mon-chart-controls" role="group" aria-label="Time range">
+                    <button class="mon-range-btn" type="button" data-range="6h" aria-pressed="false">6H</button>
+                    <button class="mon-range-btn" type="button" data-range="12h" aria-pressed="false">12H</button>
+                    <button class="mon-range-btn" type="button" data-range="24h" aria-pressed="false">24H</button>
+                    <button class="mon-range-btn is-active" type="button" data-range="all" aria-pressed="true">All</button>
+                  </div>
+                </div>
+                <div class="mon-card-body">
+                  <div class="mon-chart-wrap" id="mon-chart-wrap" aria-label="Line chart of maternal and fetal heart rates">
+                    <canvas id="mon-chart-canvas"></canvas>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Patient Status -->
+              <div class="mon-card">
+                <div class="mon-card-header">
+                  <h2 class="mon-card-title">Patient Status</h2>
+                </div>
+                <div class="mon-card-body mon-status-panel">
+                  <div class="mon-status-row">
+                    <span class="mon-status-key">Monitoring</span>
+                    <span class="mon-status-val" id="mon-status-monitoring">—</span>
+                  </div>
+                  <div class="mon-status-row">
+                    <span class="mon-status-key">Risk Status</span>
+                    <span class="mon-status-val" id="mon-status-risk">—</span>
+                  </div>
+                  <div class="mon-status-row">
+                    <span class="mon-status-key">Pregnancy</span>
+                    <span class="mon-status-val" id="mon-status-preg-week">—</span>
+                  </div>
+                  <div class="mon-status-row">
+                    <span class="mon-status-key">Last Reading</span>
+                    <span class="mon-status-val" id="mon-status-last-read">—</span>
+                  </div>
+                  <div class="mon-status-row">
+                    <span class="mon-status-key">Data Source</span>
+                    <span class="mon-status-val" id="mon-status-data-source">—</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Recent Readings Table -->
+            <div class="mon-card mon-section">
+              <div class="mon-card-header">
+                <h2 class="mon-card-title">Recent Sensor Readings</h2>
+              </div>
+              <div class="mon-card-body" id="mon-readings-container">
+                <!-- JS Populated -->
+              </div>
+            </div>
+
+            <!-- Alert Summary -->
+            <div class="mon-card mon-section">
+              <div class="mon-card-header">
+                <h2 class="mon-card-title">Alert Summary</h2>
+                <a href="alerts.html" class="mon-alerts-link">View all alerts &rarr;</a>
+              </div>
+              <div class="mon-card-body" id="mon-alerts-container">
+                <!-- JS Populated -->
+              </div>
+            </div>
+
+          </div><!-- /#mon-main-content -->
         </main>
 
       </div>
@@ -197,6 +405,7 @@
     <script src="../js/utils.js"></script>
     <script src="../js/auth.js"></script>
     <script src="../js/data/dataService.js"></script>
+    <script src="../js/charts.js"></script>
     <script src="../js/app.js"></script>
     <script src="../js/monitoring.js"></script>
   </body>
